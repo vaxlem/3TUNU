@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <title>Tunu</title>
+  <link rel="icon" href="./images/tunuLogo.PNG">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  
+
+<style>
+#passwordPrompt p, ol li{
+    width: 55px;
+  }
+ #passwordPrompt p, ol{
+    text-align: center;
+    margin: 20px 50%;
+    padding:0 10px 5px;
+  } 
+   /* submit  */
+   button{
+    margin: 10px 0 0 40px;
+    border-radius: 5px;
+   }
+#passwordPrompt, p {
+    background-color: rgba(9, 5, 0, 0.431);
+
+}
+
+
+/* hovertest set */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: rgb(194, 58, 58);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 2px;
+  left: 10%;
+  text-anchor: middle;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  position: absolute;
+  color: yellow;
+}
+</style>
+<!-- end of password style -->
+
+<!-- Google tag (gtag.js)  *must be added to all pages-->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F02K9DJ88C"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-F02K9DJ88C');
+</script> 
+</head>
+<body>
+
+  <!-- Password prompt -->
+  <div id="passwordPrompt" style="text-align: center;">
+    <h1>Answer the Question</h1><br> <h3>The full name of Lakle is '<i>TAY LAKLE EHA</i>'</h3> <br><p><ol style="list-style-type: upper-alpha; margin-right: 160px;"><li style="padding-right: 0px;">true</li>
+    <li style="padding-right: 0px;">false</li></ol></p>
+    <label for="passwordField">Enter correct Answer as password: </label>
+    <div style="position: relative;">
+      <input type="password" placeholder="A or B" id="passwordField" style="padding:1px 5px;">
+      <span class="togglePassword" onclick="togglePasswordVisibility()">
+        <i class="fas fa-eye"></i>
+      </span>
+    </div>
+    <button onclick="checkPassword()">Submit</button>
+    <p id="passwordError" style="display: none; color: rgb(179, 241, 11);">Incorrect password. Try again.</p>
+  </div>
+
+   <!-- Main content (hidden by default) -->
+   <div id="mainContent" style="display: none; text-align: center;">
+    <h1>A  strong Man </h1>
+    <p>The life Story</p>
+
+    <!-- MAMAM DOWE -->
+    <div class="col col-sm-7" style="background-color: #eb0a6f; margin: 1rem auto; padding: 2rem 0rem ; overflow-y: visible; width: 280px;">
+    <a href="./images/bina.jpeg">
+      <img src="./images/bina.jpeg" alt="Torgbi Ashiapim Kubi Eha II" usemap="#myChildren" style="width: 260px; height: auto; position: relative;left: 0.1rem; padding-bottom:3rem;">
+  
+<!-- usemap pic in pics -->
+  <map name="myChildren"> 
+    
+<!-- tooltip hover  -->
+<div class="tooltip">
+
+  <area  onclick="alert('you will see my child here')" shape="rect" coords="34,80,100,250" alt="phil" href=".//images/1.PNG">
+  <span class="tooltiptext">click there and see my child or click top corner and see myself</span>
+</div>
+<div class="tooltip">
+  <area onclick="alert('you will see my child here')"shape="rect" coords="39,80,105,250" alt="hermon" href="./image/PAWPAW.jpg">
+  <span class="tooltiptext"> top corner and see myself</span>
+</div>
+  <area shape="rect" coords="290,172,333,250" alt="Mamma" href="./image/ORANGE.jpg">
+  <area shape="circle" coords="337,300,44" alt="Fuseini" href="./image/PAWPAW.jpg">
+</map>
+    </a> 
+    <div style="padding:1rem; text-align: justify; font-family:Impact, 'Haettenschweiler', Arial Narrow Bold, sans-serif ;">Date of birth: ....... <br> He's a humble man <br> Father:  KWABLA ALORGBODZI XENYO TETTEY <br>Mother: DOEWE from WHUTI. <br>He started at ...... and worked as ..............<br> <br> He lives in Togo Republic. <br> <br>He is the SECOND TO LAST of his parents and has 9 siblings.. <br> <br>This legend has given birth to .............children.</div> </div>
+
+  
+  </div>
+
+
+<!-- the script -->
+  <script>
+    const password = "A";
+
+    function checkPassword() {
+      const enteredPassword = document.getElementById("passwordField").value;
+      if (enteredPassword === password) {
+        // If the entered password is correct, show the main content
+        document.getElementById("passwordPrompt").style.display = "none";
+        document.getElementById("mainContent").style.display = "block";
+      } else {
+        // If the entered password is incorrect, show an error message
+        document.getElementById("passwordError").style.display = "block";
+      }
+    }
+
+    function togglePasswordVisibility() {
+      const passwordField = document.getElementById("passwordField");
+      const icon = document.querySelector(".togglePassword i");
+
+      if (passwordField.type === "password") {
+        passwordField.type = "text";
+        icon.classList.remove("fa-eye");
+        icon.classList.add("fa-eye-slash");
+      } else {
+        passwordField.type = "password";
+        icon.classList.remove("fa-eye-slash");
+        icon.classList.add("fa-eye");
+      }
+    }
+
+    // Handle Enter key press on the password input field
+    document.getElementById("passwordField").addEventListener("keypress", function(event) {
+      if (event.key === "Enter") {
+        checkPassword();
+      }
+    });
+  </script>
+
+</body>
+</html>

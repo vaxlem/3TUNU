@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>Tunu</title>
+    <link rel="icon" href="./images/tunuLogo.PNG">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+    <link rel="stylesheet" href="./bootstrap-4.5.3-dist/">
+    <!-- <link rel="icon" href="./image/logo.png"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,900;1,400&family=Montserrat:wght@900&family=Roboto:ital,wght@0,300;0,400;1,400&family=Sacramento&family=Zen+Dots&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+
+
+    
+    
+
+<style>
+* {
+  box-sizing: border-box;
+}
+h4{color: rgba(0, 128, 0, 0.734);}
+    
+    /* tunu logo */
+    .logo{
+        height: 45px;
+        width: 100px;
+        margin: 0 10px 10px 1px;
+        border-radius: 10px;
+        padding: auto 10px;
+    }
+    .navbar-brand {
+      display: inline-block;
+      padding-left: 1rem;
+      padding-top: 0.3125rem;
+      padding-bottom: 0.3125rem;
+      margin-right: 1rem;
+      font-size: 1.25rem;
+      line-height: inherit;
+      white-space: nowrap;
+    }
+    
+    .navbar-brand:hover, .navbar-brand:focus {
+      text-decoration:overline;
+    }
+   /* tunu map  */
+    .tunumap:hover{
+  text-transform: uppercase;
+  color: blueviolet;
+  transition: linear ease 30s;
+}
+    
+    /* buttons floating */
+    #navLink, #navLink ul li{
+      float: right;
+      list-style-type:none;
+    }
+    #activity{
+      float: left;
+    }
+    
+    .clear{
+      clear: both;
+      display: table;
+    
+    }
+/* end of nav deta */
+        /* #clan1 {
+            width: auto;
+            text-align: center;
+            background-color: green;
+        }
+    */
+img {
+  width: 100%;
+  height: auto;
+}
+
+.row:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  width: 100%;
+}
+
+    /* If the screen size is 600px wide or less, modify the arrow direction */
+    @media only screen and (max-width: 600px) {
+      .menu ul li {
+        position: relative;
+      }
+
+      .menu ul li i.fa-arrow-right {
+        display: none;
+      }
+
+      .menu ul li i.fa-arrow-down {
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        padding-right: 10px;
+        transform: translateY(-50%);
+      }
+    }
+
+   
+    
+  
+
+@media only screen and (min-width: 600px) {
+/* Hide the arrow down icon when screen width is above 600px */
+ .menu ul li i.fa-arrow-down {
+        display: none;
+      }
+ .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 768px) {
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  background-color: #9933cc;
+  color: #ffffff;
+  padding: 10px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+}
+
+.menu li {
+  cursor: pointer;
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color :#33b5e5;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color: #0099cc;
+}
+
+.aside {
+  background-color: #33b5e5;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.footer {
+  /* background-color: #0099cc; */
+  background-color: black;
+  color: #ffffffb4;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+
+}
+/* footter i */
+.footer .i{
+    padding: 10px;
+}
+
+
+   
+ 
+</style>
+</head>
+<body>
+<div class="header">
+    <div class="w3-container w3-blue">
+        <h1 id="activity"><a class="navbar-brand" href="./images/tunuLogo.PNG"><img src="./images/tunuLogo.PNG" alt="tunubrand" class="logo"></a>  <i class="fa fa-gears " aria-hidden="true" style="padding-right: 30px;"></i>ACTIVITIES</h1>
+        <!-- <p>Resize this responsive page!</p>  -->
+        <div id="navLink">
+          <ul>
+            <li> 
+                
+                <a href="./the-12Tribe.html"><button class="button-hover" style="width: fit-content; padding: 5px; background-color:rgba(89, 63, 236, 0.813); margin: 5px;cursor: pointer; border: none; border-radius: 10px;" > <i class="fa fa-tree" aria-hidden="true"></i>
+                The Land</button></a></li>
+              <li> <a href="./the-people.html"><button class="button-hover" style=" width: fit-content; padding: 5px; background-colo:rgb(175, 7, 77); margin:5px;cursor: pointer; colo: rgba(255, 255, 255, 0.612); border: none; border-radius: 10px;"> <i class="fa fa-users" aria-hidden="true"></i>
+                People</button></a></li>
+              <li>  <a href="./index.html"><button class="button-hover" style=" width: fit-content; padding: 5px; background-colo:rgb(175, 7, 77); margin:5px;cursor: pointer; colo: rgba(255, 255, 255, 0.612); border: none; border-radius: 10px;"> <i class="fa fa-home" aria-hidden="true"></i>
+                HOME</button></a></li>        
+          </ul>
+        </div>
+      </div>
+<div class="clear">
+</div>
+</div>
+
+<div class="row">
+  <div class="col-3 col-s-3 menu">
+    <ul>
+      <li id="school">Schooling    <i class="fa fa-arrow-right" id="navLink"></i>
+          <i class="fa fa-arrow-down" id="navLink"></i> <!-- Arrow bottom icon -->
+        </li> <div class="row"></div>
+      <li id="farm">Farming   <i class="fa fa-arrow-right" id="navLink"></i>
+          <i class="fa fa-arrow-down" id="navLink"></i> <!-- Arrow bottom icon -->
+        </li> <div class="row"></div>
+      <li id="firewood">Firewood Processing   <i class="fa fa-arrow-right" id="navLink"></i>
+          <i class="fa fa-arrow-down" id="navLink"></i> <!-- Arrow bottom icon -->
+        </li> <div class="row"></div>
+      <li id="trade">Trading and Commence   <i class="fa fa-arrow-right" id="navLink"></i>
+          <i class="fa fa-arrow-down" id="navLink"></i> <!-- Arrow bottom icon -->
+        </li> <div class="row"></div>
+      <li id="ent">Entertainment and Others   <i class="fa fa-arrow-right" id="navLink"></i>
+          <i class="fa fa-arrow-down" id="navLink"></i> <!-- Arrow bottom icon -->
+        </li> <div class="row"></div>
+    </ul>
+  </div>
+
+  <div class="col-6 col-s-9" id="clan1">
+    <h1>The Rich City</h1>
+    <p>Tunu is a fishing comminity. Together with few towns by the river tributary, they form the Anyanui State. Thus one of the <a href="https://www.facebook.com/story.php?story_fbid=pfbid0sVUrnVaWURyrd9Xq148gdxRYo3qqMWMGPxysB9a97F6f6Q9AJ4DV3WpTv65xV5Tul&id=100063497355847&post_id=100063497355847_pfbid0sVUrnVaWURyrd9Xq148gdxRYo3qqMWMGPxysB9a97F6f6Q9AJ4DV3WpTv65xV5Tul&sfnsn=mo&mibextid=I6gGtw">36 States of ANLO.</a> There is lots of Mangrove here. Bomigo is her Twin City. The city can be divided into two parts, the Wet Swampy area and the dryland on the eastern part.</p>
+    <img src=".//images/mangrove.jpg" width="460" height="345">
+  </div>
+
+  
+
+  <div class="col-3 col-s-12">
+    <div class="aside">
+      <h2>What?</h2>
+      <p>A home place to be.</p>
+      <div class="col-12" ><p>As a sovering State among the 36 states of Anlo, Tunu township engages in numerous livelyhood activities. Here you'll see some works that keep them busy each day</p></div>
+
+      <h2>Where?</h2>
+      <p> Tunu is at the mouth of the running  <a href="https://www.google.com/search?q=stream+water&sca_esv=559951443&sxsrf=AB5stBhzE8ODhD30UD6c5GAwtWDI7r7nFQ%3A1692937952409&ei=4C7oZJvTGInrkdUP2O62oA4&oq=stream&gs_lp=Egxnd3Mtd2l6LXNlcnAiBnN0cmVhbSoCCAIyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGIoFGLADGEMyChAAGIoFGLADGEMyDBAAGIoFGLADGAoYQzIKEAAYigUYsAMYQzIOEAAY5AIY1gQYsAPYAQEyDhAAGOQCGNYEGLAD2AEBMg4QABjkAhjWBBiwA9gBATIWEC4YigUYxwEY0QMYyAMYsAMYQ9gBAjIWEC4YigUYxwEY0QMYyAMYsAMYQ9gBAkitGlAAWABwAngBkAEAmAEAoAEAqgEAuAEByAEA4gMEGAAgQYgGAZAGEboGBggBEAEYCboGBggCEAEYCA&sclient=gws-wiz-serp">CREEK</a>  tributary that connects and feeds the large Keta lagoon from the west.<a class="tunumap" href=".//images/tunu mapcarta1.PNG"> See Map <i class="fa fa-map-pin" aria-hidden="true"></i></a></p>
+      <h2>How?</h2>
+      <p>You can reach Tunu township by two (2) means. By road network and Cruise on the tributary  stream that connects the large Keta lagoon on the eastern part and the estuary to the west. <br> <a class="tunumap" href="./images/plain tunu NAME.png">See Map <i class="fa fa-map-pin" aria-hidden="true"></i></a></p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">  <!-- <footer id="footer"  > -->
+
+  <p>VISIT TUNU TODAY. And Experience the beautiful Culture and Fresh Nature.</p>WELCOME to <span style="text-decoration: overline; font-size: 14px; color: rgba(255, 255, 255, 0.701);">TUNU</span> a land of Riches. FOLLOW YOUR ROOT
+  <p>' Now you know '</p>
+
+    Contact Information
+    <br>
+    <a href="mailto:tunulandofriches@gmail.com"><i class="social-icon fa fa-envelope i fa-2x" alt="e-mail"></i></a>
+    <a href="https://www.facebook.com/profile.php?id=100095491724789"><i class="i social-icon fa fa-facebook fa-2x" alt="fbook"></i></a>
+    <a href="#"><i class="i social-icon fa fa-twitter fa-2x" alt="twitter"></i></a>
+    <a href="http://www.linkedin.com/in/tunu-tunu-023b26288"><i class="i social-icon fa fa-linkedin fa-2x"></i></a>
+    <a href="#"><i class="i social-icon fa fa-instagram fa-2x "></i></a>
+  
+    <h4>courtesy SEL &trade;</h4>
+    <p style="padding: 0 1.2rem; text-align: center;">© 2023 - All Rights Reserved.
+  </p>
+</div>
+
+
+ <!-- script    -->
+ <script>
+    document.getElementById("school").onclick = function(){
+        document.getElementById("clan1").innerHTML ="<h1>SCHOOLING</h1>" +"<div style='text-align:justify;'>The indigeons love School. Even before independence the children have been in school.Today the town can boast of a complete Primary school. The school once served pupils of Bomigo untill they had their own Primary. The children will continue to secondary school in another town after they complete their primary. Anyanui, Dzita and some other places serves them for their continuation.</div>";
+        document.getElementById("clan1").style = "width:auto";
+        document.getElementById("clan1").style = "text-align:center";
+        document.getElementById("clan1").style = "background-color:#3bcc";
+
+
+
+    }
+
+    
+
+       document.getElementById("trade").onclick = function(){
+       document.getElementById("clan1").innerHTML = "<h1>Trading and Commerce</h1>" +
+                                                        "<p>The wowen and young ladies actively do business. They trade in wares they could lay hand on. There is a big market at Anyanui that serves all the communities far and near. Some of the commodities they trade in are perishable goods such as fish and farm produce. Chief among the wares is Firewood that they gathered from their mangroves they grew.</p>" +
+                                                        "<a href='images/760px-Mapcarta tunu market.jpg'><img src='images/760px-Mapcarta tunu market.jpg' style='width:30%; height:auto; float:left'></a>credit:Mapcarta"+
+                                                        "<a href='images/tunu1.PNG'><img src='images/tunu1.PNG' style='width:30%; height:auto; float:right'><div style='clear:both;'></div></a>"+
+                                                        "<div style='clear:both;'></div>"+
+                                                        "<p>Anyanui is the economic center. Other places where they go to trade their wares are</p>"+
+                                                        "<ol><li>Anloga</li><li>Dzita</li><li>Keta</li><li>Akuse</li><li>Takodi</li>and as far as markets in Abidjan</ol>"+
+                                                        "Where they sell items such as dressed Fishes of all kinds, including Crabs, lobsters,  mullucs, among others. "
+                                                        +"<p>The people also trade artefacts like; woven fan(Papa), and ropes from date (Ayideka) as well as live stock.  Then they will also buy items they needed to have. </p>"
+                                                         
+
+        }
+   
+
+
+
+    // sites
+    document.getElementById("farm").onclick = function(){
+        document.getElementById("clan1").innerHTML = "<h1>Farming Activities</h1>"+ 
+        "<img src='./images/farmingistockphoto.jpg' width='460' height='345'>"+
+        "<p style='text-align:justify;'>Although the Land is  not totally fertile due to the salinity of the area, few  individuals grow foodstuffs that they needed to eat.<br>'But there is some form of subsistence agriculture - cassave maize, vegetables growing on the fringes of the dry parts of the area, made possible by effective manuring' <br> Even the swampy areas support the growth of mangroves. Both men and women do this mangrove plantation work as a cash crop to sell. Some times they involve their children especially during harvest days. <br> <h2>FOOD CROPS </h2> <p style='text-align:justify;'>However, Food crops such as cassava, corn, sweet potato, yam and groundnut may grow well in the area. That is not all,  some fruits grow especially on the dry portions like; date palm (wild), oranges,  palm fruit, coconut and mango. <br><br>The good coastal weather gives rainy and dry seaons which enable some Individuals to plant vegetables for this home use.  </p>"+
+        " <h4>HERBS</h4> "+
+        "<p style='text-align:justify;'>Assorted Herbs can be found here which the indegeons use for medicinal purposes.</p>"+
+        "<h2>THE MANGROVE </h2>"+
+        "<p style='text-align:justify;'>Tunu township belives the mangroves is their Cocoa, they grow it, and when the bush matured they cut it into uniform lengths and dry them. When the logs are drenched off water, they then would tie a considerable volume and place a monitary value on a bundle. The one beauty of the business is that each bundle appeared to be same in volume after they are tied. People from far buy the bundles and use them for cooking or other fires. It is a hard but lucretive business.</p>"+
+        "<a href='.//images/date.jpg'><img src='.//images/mangrove.jpg' width='460' height='345'></a>"+
+        "<p style='text-align:justify;'>A relatively recent commercial use of mangroves is for recreation and ecotourism. In Australia, mangrove habitats play a significant role in programs of conservation, recreation and researching methods of establishing nature reserves, sanctuaries, national parks and biosphere reserves.</p>"+
+        " <h4 style='color: white; text-decoration:bold'>Special</h4>"+" <p style='text-align:justify;'>Use of Mangroves as natural sewage - treatment plants has been considered because Mangroves trap sediments and so contribute to land building, preventing erosion and excessive shifting of coastlines.</p>"+
+        "<h2>THE DATE PALM (Phoenix dactylifera)</h2> "+
+        "<p style='text-align:justify;'>This tree is not developed here but the dates in this area grow in the wild without any culture. <br>It is from the tree of the palm family (Arecaceae) cultivated for its sweet edible fruits. The date palm has been prized from remotest antiquity and may have originated in what is now Iraq. The fruit has been the staple food and chief source of wealth in the irrigable deserts of North Africa and the Middle East. Spanish missionaries carried the tree to the New World in the 18th and early 19th centuries. Date palms are grown in the Canary Islands, northern Africa, the Middle East, Pakistan, India, Mexico, and the U.S. state of California. GHANA must be proud to have this plant too.</p> "+
+        "<a href='./images/date frul.jpg'><img src='./images/date.jpg' width='460' height='345'></a>"+
+        "<h3 style='color: white; text-decoration:bold;'>Brief history about DATES</h3>"+
+        "<p style='text-align:justify;'><br> dried dates <br> Dates have a long shelf life, and many varieties, including the common deglet noor, are often sold dried and processed. The dried fruit is more than 50 percent sugar by weight and contains about 2 percent each of protein, fat, and mineral matter. Other types of dates, such as the medjool, are eaten as fresh produce and gradually shrink and wrinkle as they age. </p>"+
+        "<div style='text-align:justify;'>The date palm grows about 23 metres (75 feet) tall. Its stem, strongly marked with the pruned stubs of old leaf bases, terminates in a crown of graceful, shining, pinnate leaves about 5 metres (16 feet) long. Floral spikes branch from the axils of leaves that emerged the previous year. Male and female flowers are borne on separate plants. Under cultivation the female flowers are artificially pollinated. The date is a one-seeded fruit, or drupe, usually oblong but varying much in shape, size, colour, quality, and consistency of flesh, according to the conditions of culture and the variety. More than 1,000 dates may appear on a single bunch weighing 8 kg (18 pounds) or more.</div>"+
+        "<h4 style='color: white;text-decoration:bold'>Planting</h4>"+
+        "<p style='text-align:justify;'>  The tree is propagated either from seeds or from suckers, offshoots that arise chiefly near the base of the stem in the early years of the life of the palm. Offshoots are used for commercial plantings. When offshoots are three to six years old and have formed roots of their own, they are removed and planted. Palms begin to bear fruit in 4 to 5 years and reach full bearing at 10 to 15 years, yielding 40 to 80 kg (90 to 180 pounds) or more each. Palms are known to live as long as 150 years, but their fruit production declines, and in commercial culture they are replaced at an earlier age.</p>"+
+        "<img src='./images/nathan-dumlao-fRN5Y7BN1ZU-unsplash date.jpg' width='460' height='345'>"+
+        " <h1>Uses</h1>"+
+        "<p style='text-align:justify;'> All parts of the date palm yield products of economic value. Its trunk furnishes timber; the midribs of the leaves supply material for <br><p style='background-color:rgb(225, 225, 125, 004); padding:2px; text-align:justify;'> crates and furniture; the leaflets, for basketry; the leaf bases, for fuel; the fruit stalks, for rope and fuel; the fibre, for cordage and packing material; and the seeds are sometimes ground and used as stock feed. Syrup, alcohol, vinegar, and a strong liquor are derived from the fruit.</p> <p style='text-align:justify;'>The sap is also used as a beverage, either fresh or fermented, but, because the method of extraction seriously injures the palm, only those trees that produce little fruit are used for sap. When a palm is cut down, the tender terminal bud is eaten as a salad. <br> Egypt, Iran, Saudi Arabia, and Iraq are the leading date-producing and date- exporting countries, although fruit from Algeria and Tunisia also is well known in Europe. California is the major American producer. <br> The date palm is grown as an ornamental tree along the Mediterranean shores of Europe, and its leaves are used for the celebration of Palm Sunday among Christians and for the celebration of Sukkoth (Feast of Tabernacles) among Jews.</p>"+
+        " <br> <u>Credit</u>: <p style='font-size:small;'> istockphotos. <br>Britannica, Editors of Encyclopaedia Britannica.This article was most recently revised and updated by Melissa Petruzzello.</p>";
+        document.getElementById("clan1").style = "width:auto";
+        document.getElementById("clan1").style = "text-align:center";
+        document.getElementById("clan1").style = "background-color:red";
+        
+
+    }
+
+    // names
+    document.getElementById("firewood").onclick = function(){
+        document.getElementById("clan1").innerHTML ="<H1>FIREWOOD PROCESSING</h1>"+
+                                                    "<img src='./images/mangrove trunk.jpg' style='padding-bottom:10px;'>"+
+                                                    "<p style='color:#ffffff96; text-align:justify; line-height:25px;'> Tunu township belives the mangroves is their Cocoa, they grow it, and when the bush matured they cut it into uniform lengths and dry them. When the logs are drenched off water, they then would tie a considerable volume and place a monitary value on a bundle. The one beauty of the business is that each bundle appeared to be same in volume after they are tied. People from far buy the bundles and use them for cooking or other fires. It is a hard but lucretive business.</p>" +
+                                                    "<h3><U>IMPORTANCE</U></h3>"+
+                                                    "<P style='text-align:justify;'>Here are some benefits of Mangrove that Tunu boast of. <ol><li>It serves as Home for lots of shell fishes like snails, crabs <a href='./images/mangrove crab.PNG'><img src='images/mangrove crab.PNG' style='width:5%; height:auto; float:left;'></a> <div style='clear:both;'></div>and other crustaceans</li><li>It is a breeding area for birds<li>It helps reduces flooding from the overflowing river. It roots especially, absorb the excess waters.</li><li>The leaves make manure for acquatic weeds that fishes eat</li><li>It helps different herbs and plants to grow.</li><li>Mangrove provides clean air. It purify the environment</ol></P>" +
+                                                    "<h2> OTHER USES</h2>" +"<p style='text-align:justify;'>The tree has three (3) main parts. The roots, the trunk and the branches. Each of these has specific use. The root is fibre like and absorbs water. it is the part that hangs up from the ground and supports the top parts.This roots makes the most soft fire woods here. <h5 style='color white'>The Trunk</h5>the trunk of the tree is completely suspended above the water by the arcing <a style='color:#33b5e5;' href='https://www.google.com/imgres?imgurl=https%3A%2F%2Fproduction-new-commonwealth-files.s3.eu-west-2.amazonaws.com%2Fs3fs-public%2Fstyles%2Fhero_banner%2Fpublic%2F2022-02%2Fshutterstock_1402345532.jpg%3FVersionId%3DLqLctYJOGsxSBu0uYJ2g8v4JoI4AAWro%26itok%3D2rhtScL4&tbnid=yIT-uf8HO0DzeM&vet=10CDgQMyjPAmoXChMI0OKpn-mAgQMVAAAAAB0AAAAAEAU..i&imgrefurl=https%3A%2F%2Fthecommonwealth.org%2Fbluecharter%2Fmangrove-restoration&docid=fIniRqTcjLW3pM&w=1920&h=750&q=the%20trunk%20of%20a%20mangrove&ved=0CDgQMyjPAmoXChMI0OKpn-mAgQMVAAAAAB0AAAAAEAU'>stilt roots</a>. In other parts of the world, people have utilized mangrove trees as a renewable resource. Harvested for durable, water-resistant wood, mangroves have been used in building houses, boats, pilings, and furniture </p>"+"<p> <br>They are also used for fires and a choice for strong wood. <br><br> The local name of the parts in EWE is <u style='color:#33b5e5'> ATRA/ATRADOE, ATRATSUI AND ATIWUDZI </u>for the branches.<a href='images/MARKET.png'><img src='./images/MARKET.png'> </a></p>";
+        document.getElementById("clan1").style = "width:auto";
+        document.getElementById("clan1").style = "text-align:center";
+        document.getElementById("clan1").style = "background-color:green";
+
+
+
+    }
+// entertainment
+    document.getElementById("ent").onclick = function(){
+        document.getElementById("clan1").innerHTML = "<p style='text-align:justify;'>'All work and no play makes jack a dull boy.'</p>"+
+                                                    "<p style='text-align:justify;'>There are social groupings such as drum and dance groupings. Some point in time youth, groupings do come arround to jubilate. Especially the individuals that go away from the town to work elsewhere. <br>  </p>"+
+                                                    "<h4>FUNERALS</h4>"+
+                                                    "<a href='.//images/bina.jpg'><img src='.//images/bina.jpg' width='460' height='345'></a>"+
+                                                    "<p style='text-align:justify;'>On most weekends funeral ceremonies are organized which bring lots of people to the town.</p>"+
+                                                    "<h4>FESTIVALS</h4>"+
+                                                    "<p style='text-align:justify;'>There used to be seasonal festival of a kind among the people but nowadays, none of such performances are ongoing.</p>"+
+                                                    "<h4>RECREATIONS</h4>"+
+                                                    "<p style='text-align:justify;'>Today, the place can bost of Rest homes, Guest house and Hotels. E.g. is <i class='fa fa-glass' aria-hidden='true'></i> <a href='https://www.trip.com/hotels/keta-hotel-detail-54677471/the-chill-river-resort/'> THE CHILL</a> </p>"+
+                                                    "<a href='.//images/chil 4.PNG'><img src='.//images/chil 3.PNG' width='460' height='345'></a>"+
+                                                    "<a href='https://web.facebook.com/AvenorTV/videos/672876674811884/'>what what what DO you know?</a>"+
+                                                    "<br><h1>RELIGION AND FAITH</h1>"+
+                                                    "<p style='text-align:justify;'>TUNU is a religious city. Predominantly is the Traditional Religious Faith and Practices. Those who practice this faith has been using thier faith to perform healing and cleansing services to their clients. In fact, the city is more or less cosmopolitant in nature. Everybody lives peacefully with each other irrespective of different individual  faith affiliations. </p>"+
+                                                    "<h4>CHRISTIANITY AND ISLAM (MOSLEMS)</h4>"+
+                                                    "<P style='text-align:justify;'>PERSONS with christian and islamic faith live in TUNU as well. There is a catholic and pentecoastal churches in the town. Again, Moslems also found space to stay and perform daily live activities of their kinds.</P>";
+        document.getElementById("clan1").style = "width:auto";
+        document.getElementById("clan1").style = "text-align:center";
+        document.getElementById("clan1").style = "background-color:yellow";
+
+
+
+    }
+ </script>
+
+
+</body>
+</html>
