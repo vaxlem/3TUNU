@@ -1,0 +1,487 @@
+body{
+    background: url(./images/tunuhomes5.PNG) no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* appreciation cards about land/content.html */
+.th {
+  margin: 4px;
+  padding: 3px;
+  box-sizing: border-box;
+}
+
+/* vavbar rbrands */
+.navbar .container,
+.navbar .container-fluid, .navbar .container-sm, .navbar .container-md, .navbar .container-lg, .navbar .container-xl {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.navbar-brand {
+  display: inline-block;
+  padding-left: 1rem;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  line-height: inherit;
+  white-space: nowrap;
+}
+
+.navbar-brand:hover, .navbar-brand:focus {
+  text-decoration:overline;
+}
+
+.navbar-nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+/* welcome address */
+#welcome .welcome{
+    text-align: center;
+    font-size: 5rem;
+    font-weight: bold;
+    padding: 1rem;
+    margin: 2rem auto;
+    color: bisque;
+    letter-spacing: 2px;
+    line-height: 5rem;
+}
+#lakle{
+    padding: 10px;
+    text-align: center;
+}
+/* tunu logo */
+.logo{
+    height: 45px;
+    width: 100px;
+    margin: 0 10px 10px 1px;
+    border-radius: 10px;
+    padding: auto 10px;
+}
+
+/* naration contatner white bgrd */
+.container{
+    width: auto;
+    box-shadow: 1px 1px 2px rgba(255, 0, 0, 0.018);
+    border: 1px solid greenyellow;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 3rem;
+    margin: 0px 10px 0px 42px;
+    text-align: center;
+    height: auto;
+    flex: auto;
+    background-color: #ffffffc4;
+
+
+}
+
+
+#top, #bottom, img{
+width: 100%;
+/* border: 1px solid red; */
+height: 50%;
+}
+
+#bottom{
+    margin: 100px 0px; 
+}
+#navigation{
+    width: auto;
+    text-align: center;
+    margin: 0 auto;
+    height: auto;
+    background-color: #17add4;
+    margin: 36px 0px 0px 0px;
+
+}
+
+
+
+/* designs of tittle */
+.bottomy-container{
+    background-color: rgba(255, 255, 0, 0.781);
+    width: 220px;
+    height: 220px;
+    display: inline-block;
+    /* position: relative; */
+    /* right: auto; */
+    /* bottom: 3500px; */
+    /* bottom: 3900px; */
+    /* left:auto; */
+    margin:3rem 0rem 0rem 3rem;
+    border-radius:100%;
+    text-transform: capitalize;
+    line-height: 50.5px;
+    /* z-index: -3; */
+
+}
+
+/* tunu */
+/* p{
+background-color:rgba(0, 0, 139, 0.389); color: white; line-height: 20px; margin-bottom: 0px;
+} */
+.tunu{
+    font-size:85px;
+    padding-top: 0px;
+}
+
+#land-color{
+    text-transform: uppercase;
+    font-style: oblique;
+    color: blueviolet;
+}
+
+.p{
+    font-size: 20px;
+   padding: 10px;
+   margin: 1px; 
+   color:rgb(5, 5, 5);
+}
+
+.notwo{
+   font-size: 40px;
+   /* color:rgb(227, 252, 7); */
+
+}
+
+button:hover {
+    background-color: rgb(188, 225, 24);
+    transform: scale(1.1);
+    background-image: -webkit-linear-gradient(top, #17add4, #01191a);
+    transition: transform 0.5s ease-in;
+}
+
+button {
+    height: 30px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 2px rgba(255, 0, 0, 0.018);
+    border: 0px;
+    margin: 4px auto;
+    background-color:red;
+    cursor: pointer; 
+    color: white; 
+    /* width: 5px; */
+    
+    background-color:rgb(62, 138, 138) ;
+    cursor: pointer; color: white; width: 140px;
+}
+.button{
+  /* height: 30px; */
+    border-radius: 15px;
+    box-shadow: 1px 1px 2px rgba(255, 0, 0, 0.018);
+    border: 0px;
+    margin: 4px auto;
+    padding: 5px 0;
+    /* background-color:red; */
+    cursor: pointer; 
+    color: white; 
+    /* width: 5px; */
+    
+    background-color:rgb(62, 138, 138) ;
+    cursor: pointer; color: white; width: 116px;
+
+}
+
+/* history under play/resme button */
+.btnalign{
+  margin: auto 4px;
+}
+
+#landHistory{
+  padding: 15px 10px 0px;
+    background-color: white;
+    margin: 0px 30px 25px 30px; 
+    border: 1px solid rgb(131, 131, 236); 
+    box-shadow: 1px 1px 1px 1px rgba(255, 0, 0, 0.506);
+    border-radius: 0.5rem;
+    visibility:visible;
+    scrollbar-gutter:initial;
+    scroll-behavior:smooth;
+    overflow-y:scroll ;
+    height:15rem ;
+    background-image: -webkit-linear-gradient(top, rgb(26, 18, 249),black );
+    -moz-background-image: linear-gradient(top, rgb(91, 18, 249), black );
+    -ms-background-image: linear-gradient(top, rgb(95, 18, 249), black );
+    -o-background-image: linear-gradient(top, rgb(55, 10, 146), black );
+  }
+
+#footer {
+    text-decoration: none;
+    background-color: navy;
+    border-bottom-left-radius: 0rem;
+    border-bottom-right-radius: 3rem;
+    
+    text-align:center;
+    color: #fff;
+    font-size: 14px;
+    font-family: montserrat-black;
+    padding-right: 1rem;
+    padding-top: 2rem;
+    margin: 0rem;
+
+  }
+  
+ /* carousel style */
+
+    .carousel {
+        width: 700px; /* Adjust the width according to your needs */
+        height: 370px; /* Adjust the height according to your needs */
+        overflow: hidden;
+        position: relative;
+        left: 15em;
+        margin:  0;
+        z-index: -1;
+    }
+    /* carousel in accordion */
+    #z-index{z-index: 1;}
+
+    .carousel ul {
+        width: 500%;
+        height: 100%;
+        position: relative;
+        /* bottom: 10em; */
+        left: 15em;
+        list-style: none;
+        margin:  0px;
+        padding: 0;
+        animation: carousel-scroll 20s infinite linear;
+    }
+
+    .carousel li {
+        width: 20%;
+        height: 100%;
+        float: left;
+    }
+
+    .carousel img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    @keyframes carousel-scroll {
+        0% { left: 0; }
+        20% { left: 0; }
+        25% { left: -100%; }
+        45% { left: -100%; }
+        50% { left: -200%; }
+        70% { left: -200%; }
+        75% { left: -300%; }
+        95% { left: -300%; }
+        100% { left: -400%; }
+    }
+
+/* button link play/pause */
+    #Pause{
+      z-index: 2;
+      /* margin-bottom: 10px; */
+      color: red; 
+      background-color: #180101ee; 
+      position: absolute;
+      top: 40rem; 
+      right: 23rem; 
+      height: 3rem;
+    }
+/* accordion ends*/
+.container-fluid{
+    text-align: center;
+    margin-top: 1rem;
+    background-color: rgb(46, 3, 3);
+    box-shadow: 0rem 2rem 2rem 7rem royalblue;
+    
+  }
+  
+  /* end of grid section */
+  
+  /* accordion */
+  .all {
+    background-image: url(./image/BEACH.jpg);
+    background-size: cover;
+    height: 700px;
+    padding: 0px 0px 0px 20px;
+    
+    
+    /* position: fixed; */
+    /* position: fixed; */
+    /* margin-left: 600rem; */
+    
+  }
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+  .date {
+        background-color: rgb(70, 69, 69);
+        box-shadow: 0.1px 0.5px 1px darkgoldenrod;
+        border: 1px solid darkgoldenrod;
+        color: white;
+        font-size: larger;
+        cursor: pointer;
+        /* width: 90%; */
+        width: 60%;
+        text-align: center;
+        padding: 10px;
+        border-radius: 7px;
+        outline: none;
+        font-size: 15px;
+        margin: 40px;
+        /* margin-top: 20px; */
+        transition: 0.4s;
+        display: inline-block;
+        overflow: hidden;
+      }
+  
+      .date:hover {
+        transform: scale(1.1);
+      }
+  
+      .date:after {
+        content: "\1F447";
+        margin-left: 80%;
+      }
+  
+      .active:after {
+        content: "\1F446";
+      }
+  
+      .notes {
+        width: 60%;
+        background-color: rgb(116, 115, 115);
+        color: white;
+        font-size: large;
+        padding: 0px 18px 0px 20px;
+        margin: 1px 40px;
+        max-height: 0px;
+        transition: 0.4s;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+      }
+  /* i decoration  in accordion*/
+      .acor-i {
+        color: #111;
+      }
+  
+/* end of accordion and carousel */
+ 
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    /* .bottomy-container{
+        background-color: rgba(255, 255, 0, 0.353);
+        
+        margin:5rem 0rem 0rem 16rem; 
+        position: absolute;
+        left: 26rem;
+        line-height: 30.5px;
+
+    }
+    .tunu{
+        font-size:85px;
+        padding-top: 0px;
+    } */
+/* play/pause */
+  .but-theLand{ width: fit-content; padding:auto 5px; background-color:#B5592A; margin:0.5px;cursor: pointer; color: rgba(15, 1, 1, 0.868); font-size: 13px; letter-spacing: 1px; border-radius: 4px;}
+
+   
+    #lakle,#landHistory{
+        font-size: 14px;
+    }
+
+    /* button link play/pause */
+    #Pause {
+        z-index: 2;
+        /* margin-bottom: 10px; */
+        color: rgb(106, 0, 255); 
+        background-color: rgb(201, 226, 36); 
+        position: absolute;
+        top: 43rem; 
+        right: 1rem; 
+        height: 3rem;
+      }
+
+/* outer carousel resize position; */
+.carousel {
+  /* width: 650px;  */
+  /* Adjust the width according to your needs */
+  /* height: 320px; */
+   /* Adjust the height according to your needs */
+   width: 328px;
+   height: 199px;
+  overflow: hidden;
+  position: relative;
+  left: 0.4em;
+  /* margin:  0;
+  z-index: -1; */
+}      
+
+/* .notes {
+  width: 60%;
+  background-color: rgb(116, 115, 115);
+  color: white;
+  font-size: large;
+  padding: 0px 18px 0px 20px;
+  margin: 1px 40px;
+  max-height: 0px;
+  transition: 0.4s;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+} */
+
+.carousel ul {
+  width: 500%;
+  height: 100%;
+  position: relative;
+  /* bottom: 10em; */
+  left: 3em;
+  list-style: none;
+  margin:  0px;
+  padding: 0;
+  animation: carousel-scroll 20s infinite linear;
+}
+
+
+        .carousel img{
+          width: 328px;
+          height: 199px;
+        }
+
+/* carousel inneer aligning changes */ 
+  .date {
+        background-color: rgb(70, 69, 69);
+        color: white;
+        font-size: larger;
+        cursor: pointer;
+        width:72%;
+        /* width: 60%; */
+        /* width: 69%; */
+        
+        text-align: center;
+        padding: 0px;
+        border-radius: 7px;
+        outline: none;
+        font-size: 15px;
+        /* margin: 40px 30px 30px 0px; */
+        /* margin-top: 20px; */
+        transition: 0.4s;
+        display: inline-block;
+        overflow: hidden;
+   }
+
+
+  
+
+} 
