@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>land</title>
+    <link rel="icon" href="./images/tunuLogo.PNG">
+<!-- another carousel style link -->
+    <link rel="stylesheet" href="./style (2).css">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./comparing.css">
+  <link rel="stylesheet" href="./styleTUNu.css">
+    <!-- <link rel="stylesheet" href="./company.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="./bootstrap-4.5.3-dist/">
+    <!-- <link rel="icon" href="./image/logo.png"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,900;1,400&family=Montserrat:wght@900&family=Roboto:ital,wght@0,300;0,400;1,400&family=Sacramento&family=Zen+Dots&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+
+<style>
+  /* nav list position to right */
+ #position,#positionLeft{
+    float: left;
+
+  }
+
+  /* logo position to right */
+  #position,#positionRight{
+    float: right;
+
+  }
+
+  #navPosition{
+  position: fixed;
+    display: inline-flex;
+    margin: 0rem;
+    float: right;
+    right: 0px;
+    padding-left: 0px;
+    left: 0px;
+    
+    
+  }
+/* clear floats */
+.clear{
+      clear: both;
+      display: table;
+    
+    }
+
+    .container{
+      margin-top: 60px;
+    }
+
+    #howTo2{
+      text-align: justify;
+      padding: 5px;
+    }
+  .footer {
+  /* background-color: #0099cc; */
+  background-color: black;
+  color: #ffffff63;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+
+}
+
+/* footter i */
+.footer .i{
+    padding: 10px;
+}
+
+.footer p{color:#dcb0359b;}
+
+.date {
+  background-color: rgb(70, 69, 69);
+  box-shadow: 0.1px 0.5px 1px darkgoldenrod;
+  border: 1px solid darkgoldenrod;
+  color: white;
+  font-size: larger;
+  cursor: pointer;
+  /* width: 90%; */
+  width: 60%;
+  text-align: center;
+  padding: 10px;
+  border-radius: 7px;
+  outline: none;
+  font-size: 15px;
+  margin: 40px;
+  /* margin-top: 20px; */
+  transition: 0.4s;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.date:hover {
+  transform: scale(1.1);
+}
+
+.date:after {
+  content: "\1F447";
+  margin-left: 80%;
+}
+
+.active:after {
+  content: "\1F446";
+}
+
+.notes {
+  width: 60%;
+  background-color: rgb(116, 115, 115);
+  color: white;
+  font-size: large;
+  padding: 0px 18px 0px 20px;
+  margin: 1px 40px;
+  max-height: 0px;
+  transition: 0.4s;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+/* i decoration  in accordion*/
+.acor-i {
+  color: #111;
+}
+  /* heeeerer */
+
+/* end of accordion and carousel */
+  /* tv mode */
+  #landHistory{
+  padding: 15px 10px 0px;
+    background-color: white;
+    margin: 0px 30px 25px 30px; 
+    border: 1px solid rgb(131, 131, 236); 
+    box-shadow: 1px 1px 1px 1px rgba(255, 0, 0, 0.506);
+    border-radius: 0.5rem;
+    visibility:visible;
+    scrollbar-gutter:initial;
+    scroll-behavior:smooth;
+    overflow-y:scroll ;
+    height:10rem ;
+  background-image: -webkit-linear-gradient(top, white, rgb(249, 18, 18));
+    -moz-background-image: linear-gradient(top, white, rgb(249, 18, 18));
+    -ms-background-image: linear-gradient(top, white, rgb(249, 18, 18));
+    -o-background-image: linear-gradient(top, white, rgb(249, 18, 18));
+  }
+  /* appreciation sector */
+  .appreciation{
+    text-align: center; 
+    padding: 2rem; 
+    text-decoration: underline;
+  }
+  /* refereee section */
+  .imgdiv1{
+    margin: 4px auto; 
+    padding: 30px 0px 100px 10px; 
+    box-sizing: border-box; 
+    text-align: center; 
+    background-color:blac ; 
+    width:max-content ;
+  }
+
+  .imgdiv2{
+    margin: 4px auto; 
+    padding: 30px 0px 100px 10px; 
+    box-sizing: border-box; 
+    text-align: center; 
+    background-color:rgba(255, 0, 0, 0.695) ; 
+    width:max-content ;
+  }
+  .greenDiv{
+    width: 100px; 
+    height: 100px; 
+    padding: 30px 5px 0 0; 
+    border-radius: 100%; 
+    background-color: green;
+  }
+
+  /* the images */
+
+  .img{
+    width: 150px; 
+    height: 150px; 
+    padding: 30px; 
+    border-radius: 100%;
+  }
+
+  .img1{
+    width: 150px; 
+    height: 150px; 
+     padding: 30px; 
+    border-radius: 100%;
+  }
+
+/* how to section */
+.game{
+    margin: 2px; 
+    padding: 2px; 
+    box-sizing: border-box; 
+    text-align: center; 
+    background-color:rgba(255, 0, 0, 0.695) ; 
+    width:max-content ;
+    border: 1px solid rgb(0, 0, 8); 
+    box-shadow: 1px 1px 1px 1px rgba(231, 225, 225, 0.966);
+    border-radius: 0.5rem;
+  }
+/* end of how to section */
+
+  /* mediaa */
+@media screen and (max-width:600px){
+   /* appreciation sector */
+   .appreciation{
+    text-align: center; 
+    padding: 2rem; 
+    text-decoration: underline;
+    /* added */
+    font-size: larger;
+
+  }
+  /* refereee section */
+ 
+
+  .imgdiv2,.imgdiv1{
+    /* margin: 4px auto;  */
+    padding: 30px 0px 100px ; 
+    /* box-sizing: border-box; 
+    text-align: center;  */
+    background-color:rgba(255, 0, 0, 0.695) ; 
+    /* width:max-content ; */
+  }
+  #myAppreciation{
+    width: 200px;
+  }
+  .greenDiv{
+    width: 50px; 
+    height: 50px; 
+    padding: 5px 1px 0 0; 
+    border-radius: 100%; 
+    background-color: green;
+  }
+
+  /* the images */
+
+  /* .img1{
+    width: 100px; 
+    height: 100px; 
+    padding: 30px; 
+    border-radius: 100%;
+  } */
+  .img1{
+    width: 70px; 
+    height: 70px; 
+    padding: 6px; 
+    border-radius: 100%;
+  }
+
+  .jumpBak{
+    font-size: 14px;
+  }
+
+  /* appreciation resize with margin top for nav*/
+  
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+/* @media screen and (max-width: 600px) { */
+
+  .container{
+    width: auto;
+    box-shadow: 1px 1px 2px rgba(255, 0, 0, 0.018);
+    border: 1px solid greenyellow;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 3rem;
+    margin: 60px 10px  ;
+    text-align: center;
+    height: auto;
+    flex: auto;
+    background-color: #f34f4fc4;
+
+
+}
+
+
+/* play/pause */
+.but-theLand{ width: fit-content; padding:auto 5px; background-color:#B5592A; margin:0.5px;cursor: pointer; color: rgba(15, 1, 1, 0.868); font-size: 13px; letter-spacing: 1px; border-radius: 4px;}
+
+
+#lakle,#landHistory{
+  font-size: 14px;
+}
+
+/* button link play/pause */
+#Pause {
+  z-index: 2;
+  /* margin-bottom: 10px; */
+  color: rgb(106, 0, 255); 
+  background-color: rgb(201, 226, 36); 
+  position: absolute;
+  top: 43rem; 
+  right: 1rem; 
+  height: 3rem;
+}
+
+
+}
+
+</style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F02K9DJ88C"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-F02K9DJ88C');
+</script>
+
+</head>
+<body> 
+  <div id="navPosition">
+  <!-- navbar -->
+<nav style="height:3.6rem;" id="positionRight">
+  <div style=" float: right; position: fixed; display: inline-flex;z-index: 1; margin: 0rem;">
+      <a class="navbar-brand" href="./images/tunuLogo.PNG"><img src="./images/tunuLogo.PNG" alt="" class="logo" id="positionLeft"></a>
+      <br>
+        <a href="./the-people.html"><button class="button-hover but-Children" style="letter-spacing: 4px;  width: fit-content; padding: 3px; background-color:rgb(175, 7, 77); margin:5px;cursor: pointer; color: rgba(255, 255, 255, 0.612);"> 
+            People</button></a>
+      
+      <!-- <a href="./CHILDRENcompanywebsite.html"><button class="button-hover but-Children" > 
+          Children</button></a> -->
+      <br>
+      <a href="./children/w3.html"><button class="button-hover but-activities" style="letter-spacing: 1.3px; width: fit-content; padding: 3px; background-color:rgba(89, 63, 236, 0.813); margin: 5px;cursor: pointer;" > 
+        Activities</button></a>
+      
+      <a href="./index.html"><button class="button-hover but-home" > 
+          HOME</button></a>
+      <!-- <h1 ><a href="./correct.html"><button class="button-hover" style="width: 80px; padding: 10px; background-color:rgba(255, 0, 21, 0.821); margin: 5px;cursor: pointer; color: rgb(240, 239, 245); font-size:20px;"> Home</button></a></h1> -->
+  </div>
+  <!-- notce about the children -->
+  <div class="clear"></div>
+</nav>
+</div>
+<!-- <div id="navPosition">    
+  <a class="navbar-brand" href="./images/tunuLogo.PNG"><img src="./images/tunuLogo.PNG" alt="" class="logo" id="positionRight"></a>
+
+
+  <nav style="height:3.6rem;" id="positionLeft">
+
+    <div class="navbar-brand" style="position: fixed; display: inline-flex; margin: 0rem;">
+
+      <a href="./children/w3.html"><button class="button-hover" style="letter-spacing: 1.3px; width: 80px; padding: 10px; background-color:rgba(89, 63, 236, 0.813); margin: 5px;cursor: pointer;" > 
+            Activities</button></a>
+        <br>
+        <a href="./the-people.html"><button class="button-hover" style="letter-spacing: 4px;  width: 89px; padding: 10px; background-color:rgb(175, 7, 77); margin:5px;cursor: pointer; color: rgba(255, 255, 255, 0.612);"> 
+            People</button></a>
+        <br>
+
+        <a href="./index.html"><button class="button-hover" style="letter-spacing: 4px; width: 89px; padding: 10px; background-color:rgb(175, 7, 77); margin:5px;cursor: pointer; color: rgba(255, 255, 255, 0.612);"> 
+            HOME</button></a>
+        <br>
+        <h1 ><a href="./correct.html"><button class="button-hover" style="width: 80px; padding: 10px; background-color:rgba(255, 0, 21, 0.821); margin: 5px;cursor: pointer; color: rgb(240, 239, 245); font-size:20px;"> Home</button></a></h1>
+    </div>
+</nav>
+</div> -->
+<div class="clear"></div>
+    <a href="./images/plain tunu NAME.png"> 
+    <div class="container " style="background-color: #132fe4;  height:30rem ;background: white url(./images/plain\ tunu\ NAME.png) center no-repeat;"></div></a> 
+    <BR></BR>
+
+    <div class="container" style=" color: rgba(0, 0, 0, 0.954); font-family: Helvetica, Arial, sans-serif; border-top-right-radius: 3rem; background-image:-webkit-linear-gradient(top, yellow, red); background-image:-o-linear-gradient(top, yellow, red); background-image:-moz-linear-gradient(top, yellow, red); background-image: linear-gradient(top, yellow, red); background-image:-ms-linear-gradient(top, yellow, red);">
+<h1>THE LAND</h1>
+<div>
+
+<div id="landHistory">
+    <div ><span class="fren-fontsize"> Tunu township belives the mangroves is their Cocoa, they grow it, and when the bush matures, they cut it into uniform lengths and dry them. When the logs are drenched off water, they then would tie a considerable volume and place a monitary value on a bundle. The one beauty of the business is that each bundle appeared to be same in volume after they are tied. People from far and near buys the bundles and use them for cooking or other fires. It is a hard but lucretive business.</span>
+    <button id="playPause" onclick="togglePlayPause()" style="font-size: smaller; color: blue; background-color: yellow; position: absolute;top: 40rem; right: 3rem; height: 3rem; border-color: blue; border-style: dashed;" class="button" onclick="speak('Tunu township belives the mangroves is their Cocoa, they grow it, and when the bush matures, they cut it into uniform lengths and dry them. When the logs are drenched off water, they then would tie a considerable volume and place a monitary value on a bundle. The one beauty of the business is that each bundle appeared to be same in volume after they are tied. People from far and near buys the bundles and use them for cooking or other fires. It is a hard but lucretive business.')">
+        <h2><i class="fa fa-volume-up" aria-hidden="true"></i>Play/Pause</h2>
+      </button>
+      <!-- <button style="margin-right: 1rem; position: absolute;top: 49rem; right: 12rem; height: 3rem;" class="button" onclick="speak('Tunu township belives the mangroves is their Cocoa, they grow it, and when the bush matured they cut it into uniform lengths and died them. When the logs are drenched off water, they then would tie a considerable volume and place a monitary value on a bundle. The one beauty of the business is that each bundle appeared to be same in volume after they are tied. People from far buys the bundles and used them for cooking or other fires. It is a hard but lucretive business.')">
+        <h2>Play</h2>
+      </button> -->
+      
+        <!-- <button onclick="speak('Hello World')">Play</button> -->
+        <!-- <button onclick="togglePlayPause()">Pause/Stop</button> -->
+
+    
+        <!-- <a href="#playPause" onclick="togglePlayPause()"><h3 style="float: right; padding-right:27px; " class="button" onclick="speak('Tunu township belives the mangroves is their Cocoa, they grow it, and when the bush matured they cut it into uniform lengths and died them. When the logs are drenched off water, they then would tie a considerable volume and place a monitary value on a bundle. The one beauty of the business is that each bundle appeared to be same in volume after they are tied. people from far buys the bundles and used them for cooking or other fires.it is a hard but lucretive business.')"> <i class="fa fa-arrow-left"></i> READ ALOUD</h3></a>
+        </div> -->
+</div>
+</div>
+    </div>
+
+
+
+    <!-- appreciation -->
+<div style="background-color:rgba(255, 228, 196, 0.554) ; padding: 0px auto;">
+<div style="background-color:#f34f4fc4 ; ">
+<div style="margin: 6rem 2rem; text-align: justify;color: #06060692; background-color: #fff;text-transform: uppercase;font-family: Helvetica, Arial, sans-serif; font-size: large; padding: 0.5rem; line-height: 2rem;"> <span stytext-align: center; background-color: #fff;text-transform: uppercase; font-size: x-large; padding: ;"><h1 class="appreciation">appreciations</h1><div style="text-align: center;"><img class="img" src="./images/programming.gif" alt=""></div>
+This documentary is Painstakingly prepared with the sole aim of providing quick and ease of access to the history information that  properly and authentically represent our history which is archived to suit  modern platforms of archiving information. <br> <p style="padding: 0px 5px; margin: 1px auto;">many thanks to the personalities below, <i class="fa fa-hand-o-down" aria-hidden="true"></i>
+  <br> for helping with facts which their permission is sort for to prepare this.</p>
+  <h6 style="font-style: italic; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 10px; line-height: 12px;">DISCLAIMER:- no malice intended in anyway whatsover other than the sole <U>OBJECTIVES</U> aforementioned. individuals that contribute to the preparation of this Documentary reserve their respective privilages unequivocally. The project's objectives were adumbrated in the final product herein the *family-site*.
+  </h6>
+</table>
+ <div id="howTo"> <a href="#howTo"><button >Show how to use <br> this platform</button></a></div>
+  </div>
+  </div>
+
+
+
+  <!-- end of meanual -->
+  <div id="accordion">
+    <!-- accordion section --><!-- styleTunu.css -->
+    <div>
+      <div classNB="all" height="150rem">
+        <header>
+          <button class="date">SHOW <br/><h2> <i class="fa fa-headphones" aria-hidden="true"></i>
+            Some Love</h2></button>
+        <div id="myAppreciation" class="notes" style="margin: 1px auto; padding: 0px; width: 335px; background-color:rgba(255, 228, 196, 0.251) ;">
+          <!-- <div class="container-fluid flex" style="width: 250px;margin: 16px 0 0 0;"></div> -->
+        <!-- rgb(225, 225, 225, 0.38) -->
+              
+               <h1>Contributors</h1>
+               <h5 style="color: rgba(0, 0, 8, 0.748);">Good luck to everybody in the family. Note that the Lakle family is great. We are humble, loving, caring talented, nice and beautiful and hardworking, we endure, and we aspire to be great. We don't fear, and we remain focus. We can be found in all corners of the world. We hold different high offices too around the world like one time VP/Principal of <a href="https://yen.com.gh/124273-ghanaian-prof-wisdom-tettey-principal-university-toronto.html">Toronto </a>UNIVERSITY, others are great founders like <a href="https://anloshs.com/about.aspx">ANLO-SHS.</a> This is our pride. <br> WE <i class="fa fa-heart"></i>LOVE YOU ALL. To the young children, aspire to be great always.</h5>
+                <div>
+                  <!-- appreciation cards -->
+                  <!-- appre row width -->
+                   <div class="imgdiv1" > 
+                     <div class="row">
+                       <div class="col"> <table>
+                         <tbody onclick="alert('Do you want to know about me? OK! Continue')">
+                           <th>
+                             <td style="color: beige; width: auto;"><th>
+                               <div class="greenDiv">
+                                 <a href="./aboutPASWORD.HTML"><img  class="img1" src="./images/oldboy.jpg" alt=""></a>
+                               </div>
+                           
+                           </th>
+                           <th>
+                             <!--both pad/spacing in table data -->
+                           <!-- detais descriptioin -->
+                           <th style="padding: 0 15px 0 0;font-size: 14px;"><a href="./aboutPASWORD.HTML" style="text-decoration: none;">Torgbi <br> Ashiapim <br>Eha II</a></td>
+                             <td style="color: beige; width: auto;"><th>
+                           <!-- image padding in div -->
+                             <div class="greenDiv">
+                               <a href="./image/ORANGE.jpg"><img class="img1" src="./image/bananan.jpg" alt=""></a>
+                             </div>
+                           
+                           </th>
+                           <th>
+                             <!-- details description 2-->
+                           <th style="padding: 0 0 0 1px;font-size: 14px"><a href="./aboutPASWORD2.HTML" style="text-decoration: none;">Mr. Besah <br>Dadi Xenyo</a></td>
+                             
+                           </th>
+                         </tbody>
+                       </table></div>
+                 
+                       <!-- 2do -->
+                       <div class="col"> </div>
+                     </div>
+                   </div>
+                 <!-- add </div> to join posyion -->
+                   <div class="imgdiv2">
+                     <div class="row">
+                       <div class="col"> <table>
+                         <tbody onclick="alert('Do you want to know about me? OK Continue')">
+                           <th>
+                             <td style="color: beige; width: auto;"><th>
+                               <div class="greenDiv">
+                                 <a href="./images/mamadowe.png"><img  class="img1" src="./images/mamadowe.png" alt=""></a>
+                               </div>
+                           
+                           </th>
+                           <th>
+                                     <!--both pad/spacing in table data -->
+                             <!-- details descrition  -->
+                             <th style="padding: 0 15px 0 0;font-size: 14px;"><a href="./aboutPASWORD.HTML" style="text-decoration: none;">Mr. <br>Godwin Tettey</td>
+                             <td style="color: beige; width: auto;"><th>
+                          <!-- image padding in div -->
+                          <div class="greenDiv">
+                           <a href="./image/APPLE.jpg"><img class="img1" src="./image/APPLE.jpg" alt=""></a>
+                         </div>
+                           
+                           </th>
+                           <th>
+                            <!-- details description 2-->
+                            <th style="padding: 0 0 0 1px;font-size: 14px"><a href="./aboutPASWORD2.HTML" style="text-decoration: none;">Mad. Mary <br>Torsti JNR.</a></td>
+                           </th>
+                         </tbody>
+                       </table>
+                     </div>
+                 
+                       <!-- 2do -->
+                       <!-- <div class="col"> </div> -->
+                     </div>
+                   </div>
+                 <!-- orrange row width -->
+                   <div class="imgdiv1" >
+                     <div class="row">
+                       <div class="col"> <table>
+                         <tbody onclick="alert('Do you want to know about me? OK Continue')">
+                           <th>
+                             <td style="color: beige; width: auto;"><th>
+                               <div class="greenDiv">
+                                 <a href="./images/mamadowe.png"><img  class="img1" src="./images/mamadowe.png" alt=""></a>
+                               </div>
+                           
+                           </th>
+                           <th>
+                             <!--both pad/spacing in table data -->
+                             <!-- details descrition  -->
+                             <th style="padding: 0 15px 0 0;font-size: 14px;"><a href="./aboutPASWORD.HTML" style="text-decoration: none;">Mad. <br> Comfort <br> Mawunegbloe</a></td>
+                     <!-- 6th img         -->
+                               <td style="color: beige; width: auto;"><th>
+                           <!-- image padding in div -->
+                             <div class="greenDiv">
+                               <a href="./image/ORANGE.jpg"><img class="img1" src="./image/bananan.jpg" alt=""></a>
+                             </div>
+                           
+                           </th>
+                           <th>
+                      <!-- details description 2-->
+                      <th style="padding: 0 0 0 1px;font-size: 14px"><a href="./aboutPASWORD2.HTML" style="text-decoration: none;">WO1 <br>Gershon <br> Sojator</td>
+                            </th>
+                         </tbody>
+                       </table></div>
+                 
+                       <!-- 2do -->
+                       <div class="col"> </div>
+                     </div>
+                   </div>
+                 
+                 <!-- apple row -->
+                     <div class="imgdiv1" style=" background-color:rgba(255, 0, 0, 0.409) ;">
+                     <div class="row">
+                       <div class="col"> <table>
+                         <tbody onclick="alert('Do you want to know about me? OK Continue')">
+                           <th>
+                             <td style="color: beige; width: auto;"><th>
+                               <div class="greenDiv">
+                                 <a href="./images/mamadowe.png"><img  class="img1" src="./images/mamadowe.png" alt=""></a>
+                               </div>
+                           
+                           </th>
+                           <th>
+                              <!--both pad/spacing in table data -->
+                             <!-- details descrition  -->
+                           <th style="padding: 0 15px 0 0;font-size: 14px;"><a href="./aboutPASWORD.HTML" style="text-decoration: none;">Mr. <br> Yaw <br> kofigo Xenyo </a></td>
+                             <td style="color: beige; width: auto;"><th>
+                        <!-- image padding in div -->
+                        <div class="greenDiv">
+                         <a href="./image/ORANGE.jpg"><img class="img1" src="./image/ORANGE.jpg" alt=""></a>
+                       </div>
+                           
+                           </th>
+                           <th>
+                    <!-- details description 2-->
+                    <th style="padding: 0 0 0 1px;font-size: 14px"><a href="./aboutPASWORD2.HTML" style="text-decoration: none;">Mad. <br> Dadoke <br> Rebecca </a></td>
+                             </th>
+                         </tbody>
+                       </table></div>
+                 
+                       <!-- 2do -->
+                       <div class="col"> </div>
+                     </div>
+                   </div>
+                 
+                 <!-- next cards -->
+                 
+                   <div class="imgdiv1" style="background-color:blac ;">
+                     <div class="row">
+                       <div class="col"> <table>
+                       <tbody onclick="alert('Do you want to know about me? OK! Continue')">
+                 
+                           <th>
+                             <td style="color: beige; width: auto;"><th>
+                               <div class="greenDiv">
+                                 <a href="./aboutPASWORD.HTML"><img  class="img1" src="./images/bina.jpeg" alt=""></a>
+                               </div>
+                           
+                           </th>
+                           <th>
+                                    <!--both pad/spacing in table data -->
+                             <!-- details descrition  -->
+                             <th style="padding: 0 15px 0 0;font-size: 14px;"><a href="./aboutPASWORD.HTML" style="text-decoration: none;">Mr. <br>BINA TETTEY </a></td>
+                             <td style="color: beige; width: auto;"><th>
+                           <!-- image padding in div -->
+                             <div class="greenDiv">
+                               <img class="img1" src="./image/APPLE.jpg" alt="">
+                             </div>
+                           
+                           </th>
+                           <th>
+                             <!-- details description 2-->
+                           <th style="padding: 0 0 0 1px;font-size: 14px"><a href="./aboutPASWORD2.HTML" style="text-decoration: none;">Mad. <br>Mawutor  <br> Tettey</a></td>
+                            </th>
+                         </tbody>
+                       </table></div>
+                 
+                       <!-- 2do -->
+                       <div class="col"> </div>
+                     </div>
+                   </div>
+                 
+                   <div class="imgdiv1" style="background-color:rgba(137, 43, 226, 0.482) ;">
+                     <div class="row">
+                       <div class="col"> <table>
+                       <tbody onclick="alert('Do you want to know about me? OK Continue')">
+                 
+                           <th>
+                             <td style="color: beige; width: auto;"><th>
+                               <div class="greenDiv">
+                                 <a href="./images/mamadowe.png"><img  class="img1" src="./images/mamadowe.png" alt=""></a>
+                               </div>
+                           </th>
+                           <th>
+                             <!--both pad/spacing in table data -->
+                             <!-- details descrition  -->
+                             <th style="padding: 0 15px 0 0;font-size: 14px;"><a href="./aboutPASWORD.HTML" style="text-decoration: none;">Mad. <br>Sika Tettey </a></td>
+                             <td style="color: beige; width: auto;"><th>
+                           <!-- image padding in div -->
+                             <div class="greenDiv">
+                            <a href=""><img class="img1" src="./image/bananan.jpg" alt=""></a>
+                             </div>
+                           
+                           </th>
+                           <th>
+                             <!-- details description 2-->
+                             <th style="padding: 0 0 0 1px;font-size: 14px"><a href="./aboutPASWORD2.HTML" style="text-decoration: none;">MR. <br> JOHN COLINS </a></td>
+                       </th>
+                         </tbody>
+                       </table></div>
+                 
+                       <!-- 2do -->
+                       <div class="col"> </div>
+                     </div>
+                   </div>
+                 <!-- the last one -->
+                   <div class="imgdiv1" style="background-color:blac ; width:max-content ;">
+                     <div class="row">
+                       <div class="col"> <table>
+                       <tbody onclick="alert('Do you want to know about me? OK Continue')">
+                 
+                           <th>
+                             <td style="color: beige; width: auto;"><th>
+                               <div class="greenDiv">
+                                 <a href="./images/mamadowe.png"><img  class="img1" src="./images/mamadowe.png" alt=""></a>
+                               </div>
+                           
+                           </th>
+                           <th>
+                             <!--both pad/spacing in table data -->
+                           <th style="padding: 0 15px 0 0;"><a href="./aboutPASWORD2.HTML" style="text-decoration: none;">W.K. <br>JAMES <br>DOE</a></td>
+                             <td style="color: beige; width: auto;"><th>
+                         <!-- image padding in div -->
+                         <div class="greenDiv">
+                           <a href="./image/WATERMELON4.jpg"><img class="img1" src="./image/WATERMELON4.jpg" alt=""></a>
+                         </div>
+                       
+                       </th>
+                       <th>
+                         <!-- details description 2-->
+                       <th style="padding: 0 0 0 1px;font-size: 14px"><a href="./aboutPASWORD2.HTML" style="text-decoration: none;">Mr. Ben <br>Ametepee</a></td>
+                         </th>
+                         </tbody>
+                       </table></div>
+                 
+                       <!-- 2do -->
+                       <div class="col"> </div>
+                     </div>
+                   </div>
+                  </div>
+            
+         
+        </div>
+        </header>
+    <br>
+
+        </div>
+    
+      </div>
+
+    </div>
+
+
+    <!-- end of accordion -->
+
+    <!-- <div>
+ <!-- appreciation cards --
+ <!-- appre row width --
+  <div class="imgdiv1" > 
+    <div class="row">
+      <div class="col"> <table>
+        <tbody onclick="alert('Do you want to know about me? OK Continue')">
+          <th>
+            <td style="color: beige; width: auto;"><th>
+              <div class="greenDiv">
+                <a href="./images/mamadowe.png"><img  class="img1" src="./images/mamadowe.png" alt=""></a>
+              </div>
+          
+          </th>
+          <th>
+            <!--both pad/spacing in table data --
+          <!-- detais descriptioin --
+          <th style="padding: 0 15px 0 0;font-size: 14px;"><a href="./aboutPASWORD.HTML" style="text-decoration: none;">Torgbi <br> Ashiapim <br>Eha II</a></td>
+            <td style="color: beige; width: auto;"><th>
+          <!-- image padding in div --
+            <div class="greenDiv">
+              <a href="./image/ORANGE.jpg"><img class="img1" src="./image/bananan.jpg" alt=""></a>
+            </div>
+          
+          </th>
+          <th>
+            <!-- details description 2--
+          <th style="padding: 0 0 0 1px;font-size: 14px"><a href="./aboutPASWORD2.HTML" style="text-decoration: none;">Mr. Besah <br>Dadi Xenyo</a></td>
+            
+          </th>
+        </tbody>
+      </table></div>
+
+      <!-- 2do --
+      <div class="col"> </div>
+    </div>
+  </div>
+<!-- add </div> to join posyion --
+  <div class="imgdiv2">
+    <div class="row">
+      <div class="col"> <table>
+        <tbody onclick="alert('Do you want to know about me? OK Continue')">
+          <th>
+            <td style="color: beige; width: auto;"><th>
+              <div class="greenDiv">
+                <a href="./images/mamadowe.png"><img  class="img1" src="./images/mamadowe.png" alt=""></a>
+              </div>
+          
+          </th>
+          <th>
+                    <!--both pad/spacing in table data -->
+            <!-- details descrition  --
+            <th style="padding: 0 15px 0 0;font-size: 14px;"><a href="./aboutPASWORD.HTML" style="text-decoration: none;">Mr. <br>Godwin Tettey</td>
+            <td style="color: beige; width: auto;"><th>
+         <!-- image padding in div --
+         <div class="greenDiv">
+          <a href="./image/APPLE.jpg"><img class="img1" src="./image/APPLE.jpg" alt=""></a>
+        </div>
+          
+          </th>
+          <th>
+           <!-- details description 2--
+           <th style="padding: 0 0 0 1px;font-size: 14px"><a href="./aboutPASWORD2.HTML" style="text-decoration: none;">Mad. Mary <br>Torsti JNR.</a></td>
+          </th>
+        </tbody>
+      </table>
+    </div>
+
+      <!-- 2do --
+      <!-- <div class="col"> </div> --
+    </div>
+  </div>
+<!-- orrange row width --
+  <div class="imgdiv1" >
+    <div class="row">
+      <div class="col"> <table>
+        <tbody onclick="alert('Do you want to know about me? OK Continue')">
+          <th>
+            <td style="color: beige; width: auto;"><th>
+              <div class="greenDiv">
+                <a href="./images/mamadowe.png"><img  class="img1" src="./images/mamadowe.png" alt=""></a>
+              </div>
+          
+          </th>
+          <th>
+            <!--both pad/spacing in table data --
+            <!-- details descrition  --
+            <th style="padding: 0 15px 0 0;font-size: 14px;"><a href="./aboutPASWORD.HTML" style="text-decoration: none;">Mad. <br> Comfort Sosoo</a></td>
+    <!-- 6th img         --
+              <td style="color: beige; width: auto;"><th>
+          <!-- image padding in div --
+            <div class="greenDiv">
+              <a href="./image/ORANGE.jpg"><img class="img1" src="./image/bananan.jpg" alt=""></a>
+            </div>
+          
+          </th>
+          <th>
+     <!-- details description 2--
+     <th style="padding: 0 0 0 1px;font-size: 14px"><a href="./aboutPASWORD2.HTML" style="text-decoration: none;">W.K. <br>Gurson <br> Sojator</td>
+           </th>
+        </tbody>
+      </table></div>
+
+      <!-- 2do --
+      <div class="col"> </div>
+    </div>
+  </div>
+
+<!-- apple row --
+    <div class="imgdiv1" style=" background-color:rgba(255, 0, 0, 0.409) ;">
+    <div class="row">
+      <div class="col"> <table>
+        <tbody onclick="alert('Do you want to know about me? OK Continue')">
+          <th>
+            <td style="color: beige; width: auto;"><th>
+              <div class="greenDiv">
+                <a href="./images/mamadowe.png"><img  class="img1" src="./images/mamadowe.png" alt=""></a>
+              </div>
+          
+          </th>
+          <th>
+             <!--both pad/spacing in table data --
+            <!-- details descrition  --
+          <th style="padding: 0 15px 0 0;font-size: 14px;"><a href="./aboutPASWORD.HTML" style="text-decoration: none;">Mr. <br> Yaw Xenyo </a></td>
+            <td style="color: beige; width: auto;"><th>
+       <!-- image padding in div --
+       <div class="greenDiv">
+        <a href="./image/ORANGE.jpg"><img class="img1" src="./image/ORANGE.jpg" alt=""></a>
+      </div>
+          
+          </th>
+          <th>
+   <!-- details description 2--
+   <th style="padding: 0 0 0 1px;font-size: 14px"><a href="./aboutPASWORD2.HTML" style="text-decoration: none;">Mad. <br> Dadoke <br> Rebecca </a></td>
+            </th>
+        </tbody>
+      </table></div>
+
+      <!-- 2do --
+      <div class="col"> </div>
+    </div>
+  </div>
+
+<!-- next cards --
+
+  <div class="imgdiv1" style="background-color:blac ;">
+    <div class="row">
+      <div class="col"> <table>
+      <tbody onclick="alert('Do you want to know about me? OK Continue')">
+
+          <th>
+            <td style="color: beige; width: auto;"><th>
+              <div class="greenDiv">
+                <a href="./images/mamadowe.png"><img  class="img1" src="./images/mamadowe.png" alt=""></a>
+              </div>
+          
+          </th>
+          <th>
+                   <!--both pad/spacing in table data -->
+            <!-- details descrition  --
+            <th style="padding: 0 15px 0 0;font-size: 14px;"><a href="./aboutPASWORD.HTML" style="text-decoration: none;">Mr. <br>Hermon Sel </a></td>
+            <td style="color: beige; width: auto;"><th>
+          <!-- image padding in div --
+            <div class="greenDiv">
+              <img class="img1" src="./image/APPLE.jpg" alt="">
+            </div>
+          
+          </th>
+          <th>
+            <!-- details description 2--
+          <th style="padding: 0 0 0 1px;font-size: 14px"><a href="./aboutPASWORD2.HTML" style="text-decoration: none;">Mad. <br>Mamma  <br> Tettey</a></td>
+           </th>
+        </tbody>
+      </table></div>
+
+      <!-- 2do --
+      <div class="col"> </div>
+    </div>
+  </div>
+
+  <div class="imgdiv1" style="background-color:rgba(137, 43, 226, 0.482) ;">
+    <div class="row">
+      <div class="col"> <table>
+      <tbody onclick="alert('Do you want to know about me? OK Continue')">
+
+          <th>
+            <td style="color: beige; width: auto;"><th>
+              <div class="greenDiv">
+                <a href="./images/mamadowe.png"><img  class="img1" src="./images/mamadowe.png" alt=""></a>
+              </div>
+          </th>
+          <th>
+            <!--both pad/spacing in table data --
+            <!-- details descrition  --
+            <th style="padding: 0 15px 0 0;font-size: 14px;"><a href="./aboutPASWORD.HTML" style="text-decoration: none;">Mad. <br>Sika Tettey </a></td>
+            <td style="color: beige; width: auto;"><th>
+          <!-- image padding in div --
+            <div class="greenDiv">
+           <a href=""><img class="img1" src="./image/bananan.jpg" alt=""></a>
+            </div>
+          
+          </th>
+          <th>
+            <!-- details description 2--
+            <th style="padding: 0 0 0 1px;font-size: 14px"><a href="./aboutPASWORD2.HTML" style="text-decoration: none;">John Colins </a></td>
+      </th>
+        </tbody>
+      </table></div>
+
+      <!-- 2do --
+      <div class="col"> </div>
+    </div>
+  </div>
+<!-- the last one --
+  <div class="imgdiv1" style="background-color:blac ; width:max-content ;">
+    <div class="row">
+      <div class="col"> <table>
+      <tbody onclick="alert('Do you want to know about me? OK Continue')">
+
+          <th>
+            <td style="color: beige; width: auto;"><th>
+              <div class="greenDiv">
+                <a href="./images/mamadowe.png"><img  class="img1" src="./images/mamadowe.png" alt=""></a>
+              </div>
+          
+          </th>
+          <th>
+            <!--both pad/spacing in table data --
+          <th style="padding: 0 15px 0 0;"><a href="./aboutPASWORD2.HTML" style="text-decoration: none;">Gohgkjey</a></td>
+            <td style="color: beige; width: auto;"><th>
+        <!-- image padding in div --
+        <div class="greenDiv">
+          <a href="./image/WATERMELON4.jpg"><img class="img1" src="./image/WATERMELON4.jpg" alt=""></a>
+        </div>
+      
+      </th>
+      <th>
+        <!-- details description 2--
+      <th style="padding: 0 0 0 1px;font-size: 14px"><a href="./aboutPASWORD2.HTML" style="text-decoration: none;">Mr. Besah <br>Dadi Xenyo</a></td>
+        </th>
+        </tbody>
+      </table></div>
+
+      <!-- 2do --
+      <div class="col"> </div>
+    </div>
+  </div>
+ </div> -->
+ 
+  </div>
+  
+<!-- where to  to top -->
+<div class="jumpBak">
+  <a class="navbar-brand" href="#" style="color: lack; text-decoration: none; margin: 10px auto;"><img src="./images/fingureup.png" style="margin-left: 0px; padding: 0 0.5rem; width:50px; height:30px; float: left; color: black; text-decoration: none;" alt=""><h3 class="jumpBak">JUMP BACK </h3></a>
+</div>
+
+  <!-- jump to top -->
+   <!-- manual -->
+  
+    <!-- accordion section --><!-- styleTunu.css -->
+    <div id="#">
+      <div classNB="all" height="150rem">
+        <header>
+          <button class="date">USE<br/><h2> IT LIKE THIS</h2></button>
+        <div id="myAppreciation" class="notes" style="margin: 1px auto; padding: 0px; width: 335px; background-color:rgba(255, 228, 196, 0.251) ;">
+          <div id="howTo2">
+
+          </div>   
+        </div>
+          
+        </div>
+        </header>
+      <br>
+
+        </div>
+   
+<nav id="navigation" style="height:3.6rem;">
+    <div style=" display: inline-flex; margin: 0rem;">
+        <a href="./the-people.html"><button class="button-hover" style="width: 90px; padding: 10px; background-color:rgba(89, 63, 236, 0.813); margin: 5px;cursor: pointer;" > 
+            The People</button></a>
+        <br>
+        <a href="./index.html"><button class="button-hover" style=" width: 89px; padding: 10px; background-color:rgb(175, 7, 77); margin:5px;cursor: pointer; color: rgba(255, 255, 255, 0.612);"> 
+            HOME</button></a>
+        <br>
+        <a class="navbar-brand" href="#" style="color: lack; text-decoration: none; margin: 10px auto;"><img src="./images/fingureup.png" style="margin-left: 0px; padding: 0 0; width:30px; height:30px; float: left; color: black; text-decoration: none;" alt=""><h5 class="jumpBak" style="font-size: small;"><br>JUMP <br> BACK </h5></a>
+
+        <!-- <h1 ><a href="./correct.html"><button class="button-hover" style="width: 80px; padding: 10px; background-color:rgba(255, 0, 21, 0.821); margin: 5px;cursor: pointer; color: rgb(240, 239, 245); font-size:20px;"> Home</button></a></h1> -->
+    </div>
+</nav>
+</div>
+
+<div class="footer">  <!-- <footer id="footer" internal style > -->
+<div style="background-color: black;">
+  <p>VISIT TUNU TODAY. And Experience the beautiful Culture and Fresh Nature.</p>WELCOME to <span style="text-decoration: overline; font-size: 14px; color: rgba(255, 255, 255, 0.701);">TUNU</span> a land of Riches. FOLLOW YOUR ROOT
+  <p>' Now you know '</p>
+
+    Contact Information
+    <br>
+    <a href="mailto:tunulandofriches@gmail.com"><i class="social-icon fa fa-envelope i fa-2x" alt="e-mail"></i></a>
+    <a href="https://www.facebook.com/profile.php?id=100095491724789"><i class="i social-icon fa fa-facebook fa-2x" alt="fbook"></i></a>
+    <a href="#"><i class="i social-icon fa fa-twitter fa-2x" alt="twitter"></i></a>
+    <a href="http://www.linkedin.com/in/tunu-tunu-023b26288"><i class="i social-icon fa fa-linkedin fa-2x"></i></a>
+    <a href="#"><i class="i social-icon fa fa-instagram fa-2x "></i></a>
+  
+    <h4>courtesy SEL &trade;</h4>
+    <p style="padding: 0 1.2rem; text-align: center;">© 2023 - All Rights Reserved.
+  </p></div>
+</div>
+<script src="./app.js"></script>
+<!-- <script>
+    function speak(word) {
+      const utterance = new SpeechSynthesisUtterance(word);
+      speechSynthesis.speak(utterance);
+    }
+  </script>  -->
+
+<!-- play/pause scrpt -->
+
+
+  <script>
+    let utterance; // Define the utterance variable globally
+    let isSpeaking = false; // Variable to track if speech synthesis is currently playing
+
+    function speak(word) {
+      if (!isSpeaking) {
+        utterance = new SpeechSynthesisUtterance(word);
+        speechSynthesis.speak(utterance);
+        isSpeaking = true;
+      }
+    }
+
+    function togglePlayPause() {
+      if (isSpeaking) {
+        speechSynthesis.pause(); // Pause the speech synthesis
+        isSpeaking = false;
+      } else {
+        speechSynthesis.resume(); // Resume the speech synthesis
+        isSpeaking = true;
+      }
+    }
+  </script>
+
+<script>
+  var acc = document.getElementsByClassName("date");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      }
+    });
+  }
+</script>
+
+<!-- media querry -->
+<script>
+  /* // Inline JavaScript to conditionally apply styles */
+  var paragraph = document.getElementById("myAppreciation");
+  
+  if (window.innerWidth > 600) {
+    paragraph.style.width = "500px";
+  }
+</script>
+</body>
+</html>
+<!-- manual script -->
+<script>
+   document.getElementById("howTo").onclick = function(){
+        document.getElementById("howTo2").innerHTML = "<h1 style='text-align:center'>NAVIGATION</h1>" +
+                                                      "<ol><li><div>These are <button> buttons</button> press them to see what they contain.</li><br><li>There is a <span class='game'>GAME</span> play it at Lakle page.</li><br><li>This is an <span class='game'>Audio/ Play</span> play it to listen to the readings. You can STOP or Resume also.</li><br><li>PRESS on  <span class='game'>Pictures</span> and see them fully.</li> <br> <li>There are <span class='game'><a style='color:blue; text-decoration:underline; background-color:black;'>LINKS</a></span> Click on them to take you to such informations or Sites.</li><br><li> There is a <span class='game'> OK or <i class='fa fa-angle-left;' aira-hidden='true'> </span> Press ' OK ' to follow the alert message or ( ' < ' ) to Go back.</li> <br> <li>Use the <u style='color: black;'>INDEX</u> page to find specific notices you need</li></ol>";
+        document.getElementById("howTo2").style = "width:auto";
+        document.getElementById("howTo2").style = "text-align:center";
+        document.getElementById("howTo2").style = "background-color:#3bc4";
+
+
+
+    }
+</script>
+  
+</body>
+</html>
