@@ -1,0 +1,163 @@
+/* style body by adding bgi and set it to cover, add font family */
+body{
+    background: url(./images/tunuhomes5.PNG) no-repeat center center fixed;
+    background-size:cover ;
+    /* background-attachment: fixed; */
+
+    font-family: Arvo, serif;
+}
+
+.txt-align{
+    text-align: justify;
+}
+/* style brand */
+.logo{
+height: 45px;
+}
+/* style  navigation bar */
+.navbar-inverse{
+    background: rgba(0,0,0,0.5);
+
+}
+
+#navbarCollapse{
+    float: right;
+}
+
+.nav li{
+    color: rgba(255, 255, 255, 0.558);
+    font-size: 19px;
+    margin-right: 35px;
+    float: left;
+    padding: 10px 0;
+
+}
+
+.nav li:hover{
+    border-bottom: 1px solid #00ffbb;
+    padding-bottom: 9px;
+    cursor: pointer;
+
+}
+/* style jumbotron */
+.jumbotron{font-size: 50px;
+    background-color: transparent;
+    color: rgb(7, 7, 0);
+    text-align: center;margin: 0;
+    padding: 10px;
+    letter-spacing: 5.5px;
+}
+/* color of land */
+.landColor{
+    color: rgba(255, 228, 196, 0.882);
+    letter-spacing: 5.5px;
+
+}
+/* limit the width of the icons section */
+.container{
+    max-width: 1000px;
+}
+.body-image{
+    height: 100px;
+
+}
+.col-md-4{
+    text-align: center;
+    float: left;
+    margin-left: 200px;
+    border: 2px solid rgba(255, 255, 0, 0.473);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: rgba(255, 228, 196, 0.625);
+
+}
+
+.col-md-6{
+    /* kuadzi gueshon mango, adziakpoe fam, seaons fishing, bolu,blolo, blutu, agala adehe ,adza . the water changes, phily amuzu, lena kwashi */
+    text-align: center;
+    float: left;
+    margin-left: 80px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 2px;
+    margin-top: 10px;
+}
+
+.clear{
+    clear: both;
+}
+
+.icons p,h2{
+    font-size: 50px;
+}
+.question {
+    /* width: fit-content; */
+    background-color: #1852b680;
+    padding: 50px auto;
+    margin-bottom: 50px;
+    text-align: center;
+}
+/* style contact button */
+
+.contact{
+    text-align: center;
+    margin-top: 30px;
+}
+.btn {
+    background-color: #e0e70e;
+    border: none;
+    border-radius: 10px;
+    padding:10px 70px;
+    font-size: 18px;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    font-weight: bold
+
+}
+
+.btn:hover{
+    background-color: black;
+    /* text-decoration: none; */
+    color: rgba(245, 245, 245, 0.663);
+    border: 1px solid white;
+}
+/* nav list */
+.container ul, li a{
+    /* color: rgba(255, 255, 255, 0.558); */
+    color: whitesmoke;
+    font-size: 19px;
+    margin: 20px 0;
+    /* float: left; */
+    padding: 0px 20px;
+    text-align: center;
+    text-decoration: none;
+
+
+    }
+    
+@media (max-width:768px) {
+    .body-image{
+        height: 70px;
+    }
+    
+    /* navbarCollapse list */
+    #navbarCollapse ul, li a{
+        float:inline-start;
+        color: red;
+    }
+    .colorOf{
+        color: rgba(1, 12, 43, 0.91);
+        font-size:50PX ;
+
+    }
+
+    /* width of card resize */
+    .col-md-4{
+       
+        margin-left: 18px;
+        border-radius: 10px;
+        padding: 10px;
+        margin-top: 10px;
+    }
+}
