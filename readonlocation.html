@@ -2,11 +2,208 @@
 <html>
 <head>
     <title>LAKLE</title>
-    <!-- bootstrap-4 -->    
+    <link rel="stylesheet" href="./style.css">
+    <!-- <link rel="stylesheet" href="./styleTUNu.css"> -->
+<!-- bootstrap-4 -->    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./bootstrap-4.5.3-dist/">
 
-    <style>
+<!-- int.css -->
+<style>
+    #landHistory{
+  padding: 15px 10px 0px;
+    background-color: white;
+    margin: 0px 30px 25px 30px; 
+    border: 1px solid rgb(131, 131, 236); 
+    box-shadow: 1px 1px 1px 1px rgba(255, 0, 0, 0.506);
+    border-radius: 0.5rem;
+    visibility:visible;
+    scrollbar-gutter:initial;
+    scroll-behavior:smooth;
+    overflow-y:scroll ;
+    height:15rem ;
+    background-image: -webkit-linear-gradient(top, rgb(26, 18, 249),black );
+    -moz-background-image: linear-gradient(top, rgb(91, 18, 249), black );
+    -ms-background-image: linear-gradient(top, rgb(95, 18, 249), black );
+    -o-background-image: linear-gradient(top, rgb(55, 10, 146), black );
+  }
+
+
+    /* hmmmmmmm * correct style for devices/ */
+ body {
+            color: rgba(71, 19, 226, 0.888);
+            background-color: bisque;
+            font-family: 'Google Sans', sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1,
+        u,
+        .tun {
+            text-transform: uppercase;
+        }
+
+        .meaning{
+            text-align: center;
+            margin: auto 5rem;
+            line-height: 3rem;
+
+        }
+        .butn, .bgcolor, .meaning h1 p, h3 p, p{
+            margin: 0.5rem auto;
+            text-align: justify;
+            padding: 0 30px;
+            font-size: 1.7rem;
+        }
+        /* .butn {
+            text-align: center;
+            margin: 20px 0;
+        } */
+
+        .butn, .bgcolor, .meaning h1 p, h3 p, p{
+            margin: 0.5rem auto;
+            text-align: justify;
+            padding: 0 30px;
+            font-size: 1.7rem;
+        }
+
+         /* tunu typeface heading */
+         h1, u, .tun{
+            text-transform: uppercase;
+        }
+
+        .muzzle{
+            float: left;
+            width: 400px;
+            margin: 15px 0;
+       }
+        .hunter{
+            float: right;
+            width: 400px;
+            margin: 15px 0;
+       }
+
+       .clear{
+            clear: both;
+        }
+
+/* buttons */
+.butn, button{
+            width:max-content;
+            text-align: center;
+            background-color: rgba(247, 73, 10, 0.95);
+            border-radius: 3px;
+            box-shadow: 4px 2px 3px rgb(11, 11, 11);
+            border: 1px solid ;
+            margin:5px 9px 4px 0px;
+
+            padding: 10px 10px 18px;
+            font-size: 14px;
+            font-weight: bold;
+            /* color: #fff; */
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+
+}
+
+
+        button:hover {
+            background-color: rgba(0, 0, 255, 0.5);
+    font-size: 1rem;
+    /* color: rgba(0, 0, 0, 0.55) ; */
+    color: azure;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition:linear 0.3s ease;
+}
+
+
+.clear{
+            clear: both;
+        }
+        
+.p{
+    color: rgb(130, 82, 43);
+    
+}
+
+/* control button */
+#fixButton{
+    position:fixed; 
+    margin: 4rem auto;
+}
+/* audio section */
+
+#myAudio {
+      display: none;
+    }
+ /* carousel align */
+ .caro{
+        margin: auto 33rem;
+    }
+
+
+/* footter i */
+.footer .i{
+    padding: 11px;
+}
+
+/* responsive */
+@media screen and (max-width:600px){
+        .meaning{
+            text-align: left;
+            /* margin: 6.3rem 0.1rem 0rem; */
+            margin: 5.3rem 0.1rem 0rem;
+            line-height: 2rem;
+        }
+        .muzzle{
+             /* width: 150px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  */
+            width: 370px;
+            margin: 15px 1rem;
+            z-index: 1;
+        }
+        .hunter{                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+            width: 370px;
+            margin: 15px 1rem;
+            z-index: 1;
+        }
+
+        /* control button */
+#fixButton{
+    position:fixed; 
+    margin: -5rem auto;
+}
+
+
+ /* carousel */
+ .caro{
+        margin: auto 5rem;
+    }
+
+    .nav{
+        margin-top:1rem ;
+    }
+}
+</style>
+
+
+
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F02K9DJ88C"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-F02K9DJ88C');
+</script>
+
+    <!-- <style>
         #frenchButton1{
             background-color: pink;
             text-align: justify;
@@ -27,14 +224,14 @@ left: 100px;
 top: 5px;
 
         }
-    </style>
+    </style> -->
 </head>
 <body>
 
 <nav class="nav navbar-nav">
     <div class="frenchButton">
 <a href="#frenchButton1">
-    <button id="frenchButton">
+    <button id="frenchButton" style="height: 45px;">
             <i class="fa fa-language fa-2x" aria-hidden="true">Listen in French</i>
         </button></a>
     </div>
