@@ -46,6 +46,13 @@
 </head>
 
 <body>
+
+    <!-- 3rd btn adds -->
+    <div class="butn">
+        <button onclick="speakText()">Play</button>
+        <button onclick="pauseSpeech()">Pause</button>
+        <button onclick="stopSpeech()">Stop</button>
+    </div>
     <div class="meaning" id="textToRead">
         <h1>Tunu.</h1>
 
@@ -78,12 +85,7 @@
             They were using it to farm when they came to trade but later on they realized,</p>
     </div>
 
-    <!-- 3rd btn adds -->
-    <div class="butn">
-        <button onclick="speakText()">Play</button>
-        <button onclick="pauseSpeech()">Pause</button>
-        <button onclick="stopSpeech()">Stop</button>
-    </div>
+    
 
     <script>
         var speech = new SpeechSynthesisUtterance();
