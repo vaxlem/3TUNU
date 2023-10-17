@@ -114,6 +114,8 @@
     if (window.speechSynthesis.speaking) {
       window.speechSynthesis.pause();
       isPaused = true;
+    } else {
+        isPause = false;
     }
 
     audioElement.pause();
