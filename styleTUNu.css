@@ -80,7 +80,8 @@ body{
     border: 1px solid greenyellow;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 3rem;
-    margin: 0px 10px 0px 42px;
+    /* margin: 0px 10px 0px 42px; */
+    margin:0 0.11rem;
     text-align: center;
     height: auto;
     flex: auto;
