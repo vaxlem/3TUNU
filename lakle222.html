@@ -1,11 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+  <title>TTS Controls</title>
+  <link rel="stylesheet" href="12From-Ada.css">
+  <!-- Google tag (gtag.js) -->
+  
+  
+  <link rel="icon" href="./images/tunuLogo.PNG">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+<link rel="stylesheet" href="./bootstrap-4.5.3-dist/bootstrap.min.css">
+  <!-- <link rel="icon" href="./image/logo.png"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Montserrat:wght@900&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<style>
+#hidden-row{
+display:none;   
+}
+</style>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-F02K9DJ88C"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-F02K9DJ88C');
+  </script>
+  
+  
+  <!-- french to open  -->
+  
 </head>
 <body>
-    
+  <div>
+    <button onclick="speakText()"> <i class=" fas fa-play-circle" aria-hidden="true"></i> <br> Play Resume</button>
+    <button onclick="pauseSpeech()"> <i class=" fas fa-pause" aria-hidden="true"></i> <br> Pause</button>
+    <button onclick="stopSpeech()"> <i class=" fas fa-stop-circle" aria-hidden="true"></i> <br> Stop</button>
+    <button id="switchButton" onclick="toggleLanguage()"> <i class=" fas fa-gear" aria-hidden="true"></i> <br> Switch to French</button>
+    <a href="./index.html"></a><button> <i class=" fas fa-home" aria-hidden="true"></i> HOME</button>
+  </div>
+  <div >
+    <div>
+      <p id="textToRead">John Doe is a boy. He played table tennis always at noon time.<br><br>
+      <div id="englishContent" style="display:none;">
+        <h1>migration</h1>
+ Les enfants, je m'appelle Tay Eha Lakle. Votre grand-père le plus proche. Les autres grands-parents vivent à Ada, d'où mes parents sont originaires du pays d'Anlo. Le nom de mon père est Eha Ashiapim 1er, Pariest Eha Ashiapim le premier, le fils du vieil homme appelé Ashiapim d'Ada, qui se trouve être un prêtre en chef de Nyegbla dans le pays d'Anlo à l'époque de ma naissance. Ma mère est Edzortsa de Shrogboe Patamia House. J'ai une belle-mère appelée Aba Kukpo, qui a donné naissance à mes demi-frères tels que Gagba et à mes frères et sœurs à Avume Gagbakorpeh. CONNAISSEZ-VOUS MON VRAI NOM ? OH! D'ACCORD. Mon vrai nom est TAY EHA. Donc, Lakle n’est pas le nom que mes parents m’ont donné. Veux-tu que je te dise comment j'ai obtenu ce nom ? ne t'inquiète pas, je te le dirai bientôt. Je me suis marié avec une belle femme appelée MEGBENYA aHAFIA DZRAKI d'Anloga. C'est grâce à cette femme que j'ai reçu le nom de LAKLE. Ainsi, mon beau-parent appelé Lakle, qui est un roi de Kpalimé, m'a donné ce nom. LAKLE DORMEGBABA DIKUU, SOYEZ YE DA AMI WU Gbor. Ebe ye me nye Gbor deami gbor nu o. Un jour, le membre du clan Tsiame en la personne de Dzeble Kwaku commet un péché contre la divinité Nyegbla. A cette époque, le prêtre sur le tabouret nyegbla était EHA ASHIAPIM 1er. Le SIN était que, quand Ashiapim Eha 1er, est allé saluer son prêtre AMEDOR KPEGLA, l'Awoamefia d'ANLO, Dzeble Kwaku l'a giflé. cela invoque une malédiction sur le clan Tsiame. Des années plus tard, une guerre éclata à Agbeluwoe, une ville dans laquelle Dzebe kwaku était allé faire du commerce avec ce temps d'antenne. Pour sauver leurs vies, Dzikunu, Nyamadie, Tamekloe et Banninie prirent la fuite et vinrent à Anloga. quand ils sont arrivés, ils ont rapporté à la famille que l'épouse de Dzeble Kwaku, Awagashie, avait été tuée pendant la guerre. C'était une invention totale, car Dzeble Kwaku n'a pas été tué comme ils l'ont prétendu ou sont venus le raconter. Au début, la famille a cru à la nouvelle du décès de leur bien-aimé. Par conséquent, ils ont fait d'Hafia son frère aîné, pour épouser l'épouse de Dzeble Kwaku, Awaagshie Lakle. Peu de temps après s'être marié avec la femme Dzeble Kwaku, le prétendu mort revient de la guerre avec des têtes humaines. C’était alarmant et cela a provoqué la panique. Awagasi Lakle a cependant couru vers le père à Kpalime après avoir réalisé que le mari était toujours en vie. Entre-temps durant cette période, elle était enceinte d'AHAFIA DRAKI, le grand frère de Dzeble Kwaku. Elle ne croit pas que cela se produise dans sa vie et en ce qui concerne sa grossesse. C'est pour cette raison qu'elle avait nommé le bébé qu'elle avait donné naissance à Dzeble Kwaku Megbenya ko woanye. donc MEGBENYA en bref. Ce nom signifie que ce qu'elle vivait ne peut se produire qu'en l'absence de Dzeble Kwaku. Le clan Tsiame doit maintenant résoudre la malédiction qui pèse sur eux. Lorsque Mama Megbenya est née et a grandi, elle a été emmenée auprès de la divinité Nyegbla, en réparation au nom du clan Tsisame. Le prêtre du Nyegbla à cette époque était le prêtre Eha Ashiapim de 1er. Eha l'a cependant fiancée à son fils Tay. peu de temps après le mariage avec Tay, l'Awoamefia de Kpalime Ghana est venu en terre Anlo et l'a remercié, père de TAY et a déclaré la fin de la guerre entre son peuple et les habitants d'ANlos. En guise de symbole du statut, il a donné son nom royal LAKLE à Tay Eha qui est désormais son petit-fils. Ainsi lakle DORMEGBABA. LAKLE RIKUI. Salué en appellation, lakle Dormegbaba soit vous deami wu gbor. Lakle Rikuu, ebe ye me nye Gbor deami gbor nu o. Le léopard à gros ventre ou Panthère qui se dit plus gros qu'un bouc, une panthère maigre qui dit qu'il n'est nulle part égal à un bouc gras. Le mariage de TAY LAKLE EHA avec MEGBENYA permet cependant à Tay de posséder le nom LAKLE, d'apporter la paix entre deux états et permet également aux descendants d'ASHIAPIM EHA d'obtenir des terres de la famille d'Amedor Kpeglah, le roi bate ainsi que des terres de le clan Tovie. Le canton de Tunu croit que la mangroove est leur cacao, ils le cultivent et lorsque le buisson a mûri, ils l'ont coupé en longueurs uniformes et les ont arrachés. Lorsque les bûches sont trempées dans l'eau, elles nouent alors un volume considérable et attribuent une valeur monétaire à un paquet. La seule beauté de l’entreprise est que chaque paquet semblait avoir le même volume une fois lié. Des gens de loin et de près achètent les paquets et les utilisent pour cuisiner ou faire d'autres feux. c'est un métier difficile mais lucratif.
+      </div>
+      <div id="frenchContent" style="display:none;">
+    Children, I am Tay Eha Lakle. Your nearest greater grandfather. The other greater grandparents live in Ada where my parents come from to Anlo land. The name of my Father is Eha Ashiapim 1st, Pariest Eha Ashiapim the first, the son of the oldman called Ashiapim from Ada, who happen to be a chief priest to Nyegbla in Anlo land during    those days I was born. My Motherf is Edzortsa from Shrogboe Patamia House. I have a step mother called Aba Kukpo, who gave birth to my step brothers such as Gagba and siblings at Avume Gagbakorpeh. DO YOU KNOW MY REAL NAME? OH! OK. My real name is TAY EHA. So, Lakle is not the name my parents gave me. Do you whant me to tell you how i got the name? dont worry i shall tell you soon. I married to a beautiful woman called MEGBENYA aHAFIA DZRAKI from Anloga. It is because of this woman that i got the name LAKLE. Thus, My inlaw called Lakle, who is a king of Kpalime, gave me the name. LAKLE DORMEGBABA DIKUU, BE YE DA AMI WU Gbor. Ebe ye me nye Gbor deami gbor nu o. One day, the Tsiame clan member in the person of Dzeble Kwaku commited a sin against the deity Nyegbla. At that time, the priest on the nyegbla stool was EHA ASHIAPIM 1st. The SIN was that, when Ashiapim Eha 1st, went to greet his priest AMEDOR KPEGLA, the Awoamefia of ANLO, Dzeble Kwaku slapped him. this invoke a curse on the Tsiame clan. Years later, A war broke out at Agbeluwoe a town in which Dzebe kwaku had gone to trade with these air time .To save thier lives, Dzikunu, Nyamadie, Tamekloe and Banninie took to their heels and came to Anloga. when they came, they reported to the family that the wife of Dzeble Kwaku ,Awagashie, that he had been killed in the war. This wasa totaol fabrication because Dzeble Kwaku was not killed as they claimed or came to tell. At first, the family belived the death news of thier beloved one. Therefore, they maade aHafia his elder brother, to marry hid Dzeble Kwaku's wife Awaagshie Lakle. Not long after marrying to the woman, Dzeble Kwaku, the supposed dead return with human heads from the war. This was alarming and caused panic. Awagasi Lakle however, run to the father at Kpalime upon realizing that the husband is still alive. Meanwhile during that period, she was pregnant for AHAFIA DRAKI, the big brother of Dzeble Kwaku. She does not believe the incidence happenning in  her life and as a regard to her pregnancy. Due to that she had named the baby she borne Dzeble Kwaku Megbenya ko woanye. thus MEGBENYA in short. This namae means what she was going through can only happen in the absence of Dzeble Kwaku. Now the Tsiame clan need to solve their curse on them. When Mama Megbenya was born, and growing up, She was taken to the deity Nyegbla, as a reparation on behalf of the Tsisame Clan. The priest of the Nyegbla at that time was, Priest Eha Ashiapim de 1st.Eha however, bethrothed her to his   son Tay. soon after the marriage to Tay, the Awoamefia of kpalime Ghana came to Anlo land and thanked the em, father of TAY and declared end of war between his people and the inhabitants of ANlos. As a symbol of the statutory, he gave his royal name  LAKLE to Tay Eha who is now his grandson in-law. Thus lakle DORMEGBABA. LAKLE RIKUI. Appelatively hailed, lakle Dormegbaba be ye deami wu gbor. Lakle Rikuu, ebe ye me nye Gbor deami gbor nu o. The port-belly leopard or Panther which says he is fatter than goat, a lean panther which say s he is no where equal to a fatty goat. The marriage of TAY LAKLE EHA to MEGBENYA, HOWEVER, enable Tay to own the name LAKLE, bring peace between two states and also enable the decendants of ASHIAPIM EHA to obtain land from the family of Amedor Kpeglah , the bate king as well as land from the Tovie Clan. Tunu township belives the mangroove is their Cocoa, they grow it, and when the bush matuered they cut it into uniform lenghts and pried them. When the logs are drenched off water, they then would tie a considerable volume and place a monitary value on a buncdle. The one beauty of the business is that, each bundle appeared to be same in volume after they are tied. People from far and near buys the bundles and use them for cooking or other fires. it is a hard but lucretive business.  
+      </div>
+      </p>
+    </div>
+<!-- <p>Un jour, dans un temps très long, trois de ces enfants ont déménagé à Anlo-Land. Ils sont venus à Anloga parce que les habitants d'Anlo les ont invités à venir les aider. Ils ont donc laissé leurs neuf frères et sœurs à Ada et sont venus au pays d'Anlo. Quand ils sont arrivés, ils portent avec eux leur dieu de la guerre à utiliser. </p><br>
+      <h2>bonnes œuvres</h2>
+      <p>Les trois frères ont fait de bonnes œuvres dans le pays d'Anlo et ont également fondé de nombreuses familles avec les Anlos. Et les habitants d'Anlo les ont également récompensés avec de nombreuses propriétés.</p>
+      Ils ont eu des enfants. et Ashiapim a également donné naissance.
+      <h2>Torgbui Ashiapim</h2>
+      <p>Il est devenu le prêtre en chef de leur fétiche - Nyegbla à cette époque à Anlo. Son nom complet de prêtrise était Ashiapim - 1ER </p>
+      <h3><a href="./LAKLE.html"><button onclick="alert('VOUS êtes sur le point de rencontrer QUI est LAKLE')">leurs enfants</a></button></h3>
+      <div class="Men12">
+        <p>Pendant le règne d'Awadada Axorlu, 1841-1874, il a été enregistré qu'en 1865 il y avait un malentendu entre les Adas et l'Anlos. Certains historiens disent que le combat portait sur la question de savoir à qui appartenait la pêche sur l'estuaire de la Volta. Cette guerre s'intensifie jusqu'à Yaluvi pour une autre guerre appelée Datsutagba en 1866. Rendre les Anlos victorieux.</p>
+        <h1>PREUVE SUPPLÉMENTAIRE DE LEURS TRAVAUX APRÈS</h1>
+        <div id="body">
+          <iframe src="https://drive.google.com/file/d/1fOqsKp0brl34RDRQITaIO196HytHh9UT/preview" width="640" height="380"></iframe>
+        </div>
+        <H3 style="color: rgba(0, 0, 0, 0.594);" >Histoire de la venue de Jawoe (RAA Nyegbla) à ANLOGA (Keteklebi)</H3><BR></BR>
+        <h2>qui et qui est venu ?</h2>
+        <p>En 1865, Jahwoe RAA Nyegbla est venu à Anloga . C'est ces personnes qui l'ont apporté. <br><ul class="textAlign"><li>Ashiapim</li><li>Kabutey</li><li>Asimasinne (également connu sous le nom de LE)</li></ul>ILS ÉTAIENT FRÈRES DE 12.</p>
+        <BR></BR><h2>qui leur a demandé de venir ?</h2>
+        <p>Un puissant devin d'Anloga A INVITÉ leur dieu fétiche NyeGbla à répondre à une directive de son Oracle lorsqu'Anlos a demandé son service afin de les aider à combattre. <br><br> Il s'appelle Bokornorga Doe Akonu. <BR></BR>Cet homme qui est membre du clan Tovie, a traversé de nombreux endroits lorsqu'il venait de Notsie et a finalement dépassé Tegbi avant de s'installer à Anloga. <BR></BR><BR></BR>
+        <h2>où étaient-ils avant ?</h2>
+        <p>Jahwoe Raa Nyegbla et ses fils étaient à Gbugbla NigoPrampam. D'autres le généralisent comme BIG-ADA ou ADA.<br><BR></BR>
+        <h2>qu'ont-ils apporté?</h2>
+        <ul class="textAlign"><li >Ashiapim</li><li>Kabutey</li><li>Asimasinne (également connu sous le nom de LE)</li></ul>
+        <P> A amené leur divinité familiale - NYEGBLA (Jahwoe Raa). <br> Et ils ont laissé le reste de leurs 9 frères et sœurs à Ada (Gbubla/Ningo-Prampram). <BR></BR></P>
+        <BR></BR><H2> comment sont-ils arrivés ?</H2>
+        <p>Avant la descente de ces trois (3) hommes, trois (3) choses ont été envoyées pour eux. <br>Les articles étaient: <ul class="textAlign"><li><b>Gbadzagoli </b> .... <br> une sorte de busket spécialement tissé, porté par TORGBI ADELADZEA</li><BR></BR><li ><b>Adekpui </b> .... <br> une épée, portée par TORGBUI AMESIMEKU </li> <BR>et</BR><li><b>Alornuga </b> .... <br> un bracelet ornemental, porté par TORGBI DORDI</li></ul></p>
+        <BR></BR><h2>que viennent-ils faire ?</h2>
+        <P>Ashiapim et les frères ont créé leur dieu NYEGBLA RAA pour combattre les habitants d'ADA à ATORKOR, WHUTI et SROGBOE jusqu'à l'estuaire. <BR></BR>Ces peuples Ada ne permettaient pas du tout aux Anlos (Keteklebiawo) de pêcher dans l'estuaire de la rivière à Azizanu. En effet, la victoire est arrivée. Les gens d’ADA ont été sérieusement vaincus. et ANlos ont désormais la liberté de pêcher sans aucune attaque. <br>Merci à Tamekloe et Sorkpor qui ont lancé la malédiction sur Azizanu et supprimé le peuple Ada avec la malédiction qui a permis au peuple Anlo de vaincre le peuple Ada.</P>
+        <BR></BR><H2>La Grande Victoire .</H2><P>Le 6 mars 1866,<a href="#body"> <button id="clan" style="border-radius: 3px; text-decoration: none; Color: blue; font-size: small; cursor: pointer;"> <b>compte complet ici</b> </button></a> Lorsqu'une autre guerre a éclaté, Raa Nyegbla a de nouveau vaincu le peuple lors de la guerre de Datsutagba. Cette divinité Nyegbla a cependant été donnée à la divinité Mama Adesu pour être associée en tant qu'épouse. C'était une appréciation pour lui pour ses œuvres. Ici, plus tard, Tamekloe a décidé de retourner à Kwamufie, son ancienne ville natale. Pendant ce temps, les Anlos ont nié son départ et il est resté en terre Anlo avec le peuple.</P>
+        <br><BR></BR>Crédit: Asiapim Eha II<hr></div>
+        hermon
+      </div>
+  </div> -->
+
+  <audio id="audioElement" src=""></audio>
+
+<!-- simultaneous tts script -->
+<script>
+  var speech = new SpeechSynthesisUtterance();
+  var isPaused = false;
+  var audioElement = document.getElementById("audioElement");
+  var lang = 'en-US'; // Default language is English
+
+  function speakText() {
+    var additionalText = '';
+
+    if (lang === 'fr-FR') {
+      additionalText = document.getElementById("frenchContent").innerHTML;
+    } else {
+      additionalText = document.getElementById("englishContent").innerHTML;
+    }
+
+    document.getElementById("textToRead").innerHTML = additionalText;
+
+    speech.text = additionalText;
+    speech.lang = lang;
+
+    if (isPaused) {
+      window.speechSynthesis.resume();
+      isPaused = false;
+    } else {
+      window.speechSynthesis.speak(speech);
+    }
+
+    audioElement.play();
+  }
+
+  function pauseSpeech() {
+    if (window.speechSynthesis.speaking) {
+      window.speechSynthesis.pause();
+      isPaused = true;
+    }
+
+    audioElement.pause();
+  }
+
+  function stopSpeech() {
+    window.speechSynthesis.cancel();
+    audioElement.pause();
+    audioElement.currentTime = 0;
+    isPaused = false;
+  }
+
+  function toggleLanguage() {
+    if (lang === 'en-US') {
+      lang = 'fr-FR';
+      document.getElementById("switchButton").innerHTML = "Switch to English";
+    } else {
+      lang = 'en-US';
+      document.getElementById("switchButton").innerHTML = "Switch to French";
+    }
+
+    // Speak the text in the new language
+    speakText();
+  }
+</script>
+
+<!-- end of scpt -->
 </body>
 </html>
+ 
