@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The 12 Men of Ada</title>
+    <style>
+        /* Add any additional CSS styles here */
+    </style>
+</head>
+<body>
+
+<div class="Men12">
+    <h1>The 12 Men of Ada</h1>
+    <!-- Rest of the content -->
+    <h3><a href="./LAKLE.html" onclick="alert('YOU are about to meet WHO LAKLE is')">Their Children</a></h3>
+</div>
+
+<div class="Men12">
+    <!-- Rest of the content -->
+    <h2>Who and Who Came?</h2>
+    <p>
+        In the year 1865, Jahwoe RAA Nyegbla came to Anloga. He was brought by these persons:
+        <ul class="textAlign">
+            <li>Ashiapim</li>
+            <li>Kabutey</li>
+            <li>Asimasinne (also known as LE)</li>
+        </ul>
+        THEY WERE BROTHERS OF 12.
+    </p>
+    <br>
+    <!-- TTS Button -->
+    <button onclick="readText()">Read Text Aloud</button>
+</div>
+
+<script>
+    function readText() {
+        const textToRead = `
+            The 12 Men of Ada. 
+            A long time ago, in the 17th century, there lived a family of 12 strong men in Ada, in the greater Accra region of Ghana. 
+            The names of some of them are: Ashiapim, Kabutey, and Asimasinne (also known as LE). 
+            The following persons are their relatives: the Ocanseys, the Kubis, the Shamateys, among others.
+            ... (more text)
+        `;
+
+        // Initialize speech synthesis
+        const synth = window.speechSynthesis;
+        const utterance = new SpeechSynthesisUtterance(textToRead);
+
+        // Set properties if needed (e.g., voice, rate, pitch)
+        // utterance.voice = someVoice;
+        // utterance.rate = 1.0;
+        // utterance.pitch = 1.0;
+
+        // Speak the text
+        synth.speak(utterance);
+    }
+</script>
+
+</body>
+</html>
