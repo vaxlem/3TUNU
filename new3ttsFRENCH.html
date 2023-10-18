@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les 12 Hommes d'Ada</title>
+    <style>
+        /* Add any additional CSS styles here */
+    </style>
+</head>
+<body>
+
+<div class="Men12">
+    <h1>Les 12 Hommes d'Ada</h1>
+    <p>
+        Il y a LONGTEMPS, au XVIIe siècle, vivait une famille de 12 hommes forts à Ada, dans la région du grand Accra de Ghana.
+        Les noms de certains d'entre eux sont, Ashiapim, Kabutey et Asimasinne (également connu sous le nom de LE). 
+        Les personnes suivantes sont leurs parents. Ce sont: les Ocanseys, les Kubis, les Shamateys entre autres.
+        ... (more text in French)
+    </p>
+    <h3><a href="./LAKLE.html" onclick="alert('Vous êtes sur le point de rencontrer QUI est LAKLE')">Leurs Enfants</a></h3>
+</div>
+
+<div class="Men12">
+    <h2>Qui et Qui Est Venu ?</h2>
+    <p>
+        En 1865, Jahwoe RAA Nyegbla est venu à Anloga. Il a été amené par ces personnes :
+        <ul class="textAlign">
+            <li>Ashiapim</li>
+            <li>Kabutey</li>
+            <li>Asimasinne (également connu sous le nom de LE)</li>
+        </ul>
+        ILS ÉTAIENT FRÈRES DE 12.
+    </p>
+    <br>
+    <!-- TTS Button -->
+    <button onclick="readText()">Lire le Texte à Voix Haute</button>
+</div>
+
+<script>
+    function readText() {
+        const textToRead = `
+            Les 12 Hommes d'Ada. 
+            Il y a LONGTEMPS, au XVIIe siècle, vivait une famille de 12 hommes forts à Ada, dans la région du grand Accra de Ghana. 
+            Les noms de certains d'entre eux sont, Ashiapim, Kabutey et Asimasinne (également connu sous le nom de LE). 
+            Les personnes suivantes sont leurs parents. Ce sont: les Ocanseys, les Kubis, les Shamateys entre autres.
+            la migration
+            Un jour, dans un temps très long, trois de ces enfants ont déménagé à Anlo-Land. Ils sont venus à Anloga parce que les habitants d'Anlo les ont invités à venir les aider. Ils ont donc laissé leurs neuf frères et sœurs à Ada et sont venus au pays d'Anlo. Quand ils sont arrivés, ils portaient avec eux leur dieu de la guerre à utiliser.
+            bonnes œuvres
+            Les trois frères ont fait de bonnes œuvres dans le pays d'Anlo et ont également fondé de nombreuses familles avec les Anlos. 
+            Et les habitants d'Anlo les ont également récompensés avec de nombreuses propriétés.
+            Ils ont eu des enfants. et Ashiapim a également donné naissance.
+            Torgbui Ashiapim
+            Il est devenu le prêtre en chef de leur fétiche - Nyegbla à cette époque à Anlo. Son nom complet de prêtrise était Ashiapim - 1ER
+            Pendant le règne d'Awadada Axorlu, 1841-1874, il a été enregistré qu'en 1865 il y avait un malentendu entre les Adas et l'Anlos. Certains historiens disent que le combat portait sur la question de savoir à qui appartenait la pêche sur l'estuaire de la Volta. 
+            Cette guerre s'intensifie jusqu'à Yaluvi pour une autre guerre appelée Datsutagba en 1866. Rendre les Anlos victorieux.
+            PREUVE SUPPLÉMENTAIRE DE LEURS TRAVAUX APRÈS        
+            Histoire de la venue de Jawoe (RAA Nyegbla) à ANLOGA (Keteklebi)
+            qui et qui est venu ?
+            En 1865, Jahwoe RAA Nyegbla est venu à Anloga . 
+            C'est ces personnes qui l'ont apporté. Ashiapim Kabutey Asimasinne (également connu sous le nom de LE)
+            ILS ÉTAIENT FRÈRES DE 12.
+            qui leur a demandé de venir ?
+            Un puissant devin d'Anloga A INVITÉ leur dieu fétiche NyeGbla à répondre à une directive de son Oracle lorsqu'Anlos a demandé son service afin de les aider à combattre . Il s'appelle Bokornorga Doe Akonu.
+            Cet homme qui est membre du clan Tovie, a traversé de nombreux endroits lorsqu'il venait de Notsie et a finalement dépassé Tegbi avant de s'installer à Anloga.
+            où étaient-ils avant ?
+            Jahwoe Raa Nyegbla et ses fils étaient à Gbugbla NigoPrampam. D'autres le généralisent comme BIG-ADA ou ADA.
+            qu'ont-ils apporté?
+            Ashiapim Kabutey Asimasinne (également connu sous le nom de LE)
+            A amené leur divinité familiale - NYEGBLA (Jahwoe Raa). 
+            Et ils ont laissé le reste de leurs 9 frères et sœurs à Ada (Gbubla Ningo-Prampram).
+            comment sont-ils arrivés ?
+            Avant la descente de ces trois hommes, trois choses ont été envoyées pour eux. Les articles étaient  Gbadzagoli une sorte de busket spécialement tissé, porté par TORGBI ADELADZEA Adekpui une épée, portée par TORGBUI AMESIMEKU et Alornuga un bracelet ornemental, porté par TORGBI DORDI
+            que viennent-ils faire ?
+            Ashiapim et les frères ont créé leur dieu NYEGBLA RAA pour combattre les habitants d'ADA à ATORKOR, WHUTI et SROGBOE jusqu'à l'estuaire. Ces peuples Ada ne permettaient pas du tout aux Anlos Keteklebiawo de pêcher dans l'estuaire de la rivière à Azizanu. En effet, la victoire est arrivée. Les gens d’ADA
+        `;
+
+        // Initialize speech synthesis
+        const synth = window.speechSynthesis;
+        const utterance = new SpeechSynthesisUtterance(textToRead);
+
+        // Set properties if needed (e.g., voice, rate, pitch)
+        // utterance.voice = someVoice;
+        // utterance.rate = 1.0;
+        // utterance.pitch = 1.0;
+
+        // Speak the text
+        synth.speak(utterance);
+    }
+</script>
+
+</body>
+</html>
