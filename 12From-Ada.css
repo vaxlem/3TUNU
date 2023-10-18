@@ -215,7 +215,7 @@ html {
 
 .Men12{
     margin: auto 10px ;
-    text-align: center;
+    text-align: justify;
 }
 .Men12 h1, h2, h3,a{
     text-transform: uppercase;
@@ -228,6 +228,8 @@ button{
     border: 2px solid red;
     border-radius: 10px;
     margin-bottom: 3rem;
+    text-decoration:solid ;
+    font-size: large;
 }
  /* end of added css */
 
