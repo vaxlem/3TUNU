@@ -227,9 +227,9 @@ html {
 button{
     border: 2px solid red;
     border-radius: 10px;
-    margin-bottom: 3rem;
+    margin-bottom: 0.5rem;
     text-decoration:solid ;
-    font-size: large;
+    font-size: larger;
 }
  /* end of added css */
 
