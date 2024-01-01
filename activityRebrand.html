@@ -293,7 +293,7 @@ html {
     <a href="#"><i class="i social-icon fa fa-instagram fa-2x "></i></a>
   
     <h4>courtesy SEL &trade;</h4>
-    <p style="padding: 0 1.2rem; text-align: center;">© 2023 - All Rights Reserved.
+    <p style="padding: 0 1.2rem; text-align: center;">© <span id="year">2023</span> - All Rights Reserved.
   </p>
 </div>
 
@@ -400,7 +400,21 @@ html {
 
     }
  </script>
+<!-- date change -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      // Get the current year
+      var currentYear = new Date().getFullYear();
 
+      // Find the element in your footer where the year is displayed
+      var yearElement = document.getElementById('year');
+
+      // Update the year in the footer
+      if (yearElement) {
+          yearElement.textContent = currentYear;
+      }
+  });
+</script>
 
 </body>
 </html>
