@@ -27,6 +27,22 @@
     
 
 <style>
+  #animateButt{
+    /* background-color: #33b5e5; */
+    background-color:#f30;;
+    color: whitesmoke;
+    text-align: center;
+  padding:12px;
+font-size: 8px;
+border: #9933cc;
+border-radius: 8px;
+cursor: pointer;
+animation: bounce 2s infinite;
+}
+@keyframes bounce{0%, 20%, 50%, 80%, 100%{
+transform: translateY(0);}
+40%{transform: translateY(-30px);}
+60%{transform: translateY(-15px);}}
 * {
   box-sizing: border-box;
 }
@@ -239,7 +255,7 @@ html {
 <div class="row">
   <div class="col-3 col-s-3 menu">
     <ul>
-      <li id="school">Schooling    <i class="fa fa-arrow-right" id="navLink"></i>
+      <li id="school">Schooling <i class="fa fa-arrow-right" id="navLink"></i>
           <i class="fa fa-arrow-down" id="navLink"></i> <!-- Arrow bottom icon -->
         </li> <div class="row"></div>
       <li id="farm">Farming   <i class="fa fa-arrow-right" id="navLink"></i>
@@ -255,7 +271,10 @@ html {
           <i class="fa fa-arrow-down" id="navLink"></i> <!-- Arrow bottom icon -->
         </li> <div class="row"></div>
     </ul>
+    <button id="animateButt">select one</button>
+
   </div>
+
   <div class="col-6 col-s-9" id="clan1">
     <h1>The Rich City</h1>
     <p>Tunu is a fishing comminity. Together with few towns by the river tributary, they form the Anyanui State. Thus one of the <a href="https://www.facebook.com/story.php?story_fbid=pfbid0sVUrnVaWURyrd9Xq148gdxRYo3qqMWMGPxysB9a97F6f6Q9AJ4DV3WpTv65xV5Tul&id=100063497355847&post_id=100063497355847_pfbid0sVUrnVaWURyrd9Xq148gdxRYo3qqMWMGPxysB9a97F6f6Q9AJ4DV3WpTv65xV5Tul&sfnsn=mo&mibextid=I6gGtw">36 States of ANLO.</a> There is lots of Mangrove here. Bomigo is her Twin City. The city can be divided into two parts, the Wet Swampy area and the dryland on the eastern part.</p>
