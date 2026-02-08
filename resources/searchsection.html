@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Searchable Navbar</title>
+    <style>
+        /* Some basic styling for the navbar */
+        .navbar {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <input type="text" id="searchInput" placeholder="Enter a book title to search">
+        <button onclick="searchBooks()">Search</button>
+    </div>
+
+    <div id="searchResults"></div>
+
+    <script>
+        // JavaScript code to handle the search functionality
+        function searchBooks() {
+            var books = ["The Great Gatsby", "To Kill a Mockingbird", "Pride and Prejudice", "1984"];
+            var searchQuery = document.getElementById("searchInput").value;
+            var results = [];
+
+            for (var i = 0; i < books.length; i++) {
+                if (books[i].toLowerCase().includes(searchQuery.toLowerCase())) {
+                    results.push(books[i]);
+                }
+            }
+
+            var searchResultsContainer = document.getElementById("searchResults");
+            searchResultsContainer.innerHTML = "";
+
+            if (results.length > 0) {
+                var resultsHtml = "<p>Search results:</p>";
+                for (var j = 0; j < results.length; j++) {
+                    var link = '<a href="https://example.com/books/' + results[j] + '">' + results[j] + '</a>';
+                    resultsHtml += link + "<br>";
+                }
+                searchResultsContainer.innerHTML = resultsHtml;
+            } else {
+                searchResultsContainer.innerHTML = "No matching books found.";
+            }
+        }
+    </script>
+</body>
+</html>

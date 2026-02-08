@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <!-- Other head elements and styles go here -->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get the current year
+            var currentYear = new Date().getFullYear();
+
+            // Find the element in your footer where the year is displayed
+            var yearElement = document.getElementById('year');
+
+            // Update the year in the footer
+            if (yearElement) {
+                yearElement.textContent = currentYear;
+            }
+        });
+    </script>
+</head>
+<body>
+    <!-- Your website content goes here -->
+
+    <footer>
+        <!-- Other footer content -->
+        &copy; Your Website Name <span id="year">2023</span>
+    </footer>
+</body>
+</html>
+

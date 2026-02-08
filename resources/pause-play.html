@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Speech Synthesis Toggle Button</title>
+</head>
+<body>
+  <button onclick="togglePlayPause()">Toggle Play/Pause</button>
+
+
+  <!-- new  -->
+  
+  <title>Speech Synthesis Buttons</title>
+</head>
+<body>
+  <button onclick="speak('Hello World')">Play</button>
+  <button onclick="togglePlayPause()">Pause/Stop</button>
+
+  <script>
+    let utterance; // Define the utterance variable globally
+    let isSpeaking = false; // Variable to track if speech synthesis is currently playing
+
+    function speak(word) {
+      utterance = new SpeechSynthesisUtterance(word);
+      speechSynthesis.speak(utterance);
+      isSpeaking = true;
+    }
+
+    function togglePlayPause() {
+      if (isSpeaking) {
+        speechSynthesis.pause(); // Pause the speech synthesis
+        isSpeaking = false;
+      } else {
+        speechSynthesis.resume(); // Resume the speech synthesis
+        isSpeaking = true;
+      }
+    }
+  </script>
+
+
+
+
+  <script>
+    let utterance; // Define the utterance variable globally
+    let isSpeaking = false; // Variable to track if speech synthesis is currently playing
+
+    function speak(word) {
+      if (!isSpeaking) {
+        utterance = new SpeechSynthesisUtterance(word);
+        speechSynthesis.speak(utterance);
+        isSpeaking = true;
+      }
+    }
+
+    function togglePlayPause() {
+      if (isSpeaking) {
+        speechSynthesis.pause(); // Pause the speech synthesis
+        isSpeaking = false;
+      } else {
+        speechSynthesis.resume(); // Resume the speech synthesis
+        isSpeaking = true;
+      }
+    }
+  </script>
+</body>
+</html>
+
+</body>
+</html>

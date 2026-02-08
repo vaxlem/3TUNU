@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Change Boy to Girl</title>
+</head>
+<body>
+
+    <div id="genderText">boy</div>
+    <button onclick="changeGender()">Change Gender</button>
+
+    <script>
+        var isGirl = false;
+
+        function changeGender() {
+            var genderElement = document.getElementById("genderText");
+            if (isGirl) {
+                genderElement.innerHTML = "boy";
+            } else {
+                genderElement.innerHTML = "girl";
+            }
+            isGirl = !isGirl; // Toggle the flag
+        }
+    </script>
+
+</body>
+</html>

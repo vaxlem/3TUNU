@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Text-to-Speech</title>
+  <script>
+    // Function to convert text to speech
+    function textToSpeech() {
+      var text = document.getElementById('text').value;
+      var speech = new SpeechSynthesisUtterance();
+      speech.text = text;
+      window.speechSynthesis.speak(speech);
+    }
+
+    // Function to stop speech
+    function stopSpeech() {
+      window.speechSynthesis.cancel();
+    }
+  </script>
+</head>
+<body>
+  <h1>Text-to-Speech</h1>
+  <textarea id="text" rows="4" cols="50" placeholder="Enter text..."></textarea>
+  <br>
+  <button onclick="textToSpeech()">Speak</button>
+  <button onclick="stopSpeech()">Stop</button>
+
+
+
+  <button onclick="speak('banane')">Speak</button>
+
+<audio id="audio" controls></audio>
+
+<script>
+  function speak(text) {
+    // Create a new SpeechSynthesisUtterance instance
+    var utterance = new SpeechSynthesisUtterance(text);
+
+    // Speak the text
+    speechSynthesis.speak(utterance);
+
+    // Update the audio source and play the speech
+    var audio = document.getElementById('audio');
+    audio.src = URL.createObjectURL(new Blob([text], { type: 'text/plain' }));
+    audio.play();
+  }
+</script>
+
+</body>
+</html>

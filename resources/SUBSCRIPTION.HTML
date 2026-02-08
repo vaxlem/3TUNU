@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Website Subscription</title>
+  <!-- Include CSS stylesheets and other necessary scripts -->
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js"></script>
+</head>
+<body>
+  <h1>Welcome to our Website!</h1>
+  
+  <!-- Display freemium features -->
+  <h2>Freemium Features</h2>
+  <!-- Display freemium content here -->
+
+  <!-- Subscription upgrade form -->
+  <h2>Premium Subscription</h2>
+  <p>Upgrade to premium for additional features.</p>
+  <form action="subscribe.php" method="post">
+    <input type="email" name="email" placeholder="Enter your email" required>
+    <input type="submit" value="Upgrade to Premium">
+  </form>
+
+  <h1>Subscription Confirmed!</h1>
+  <p>Thank you for upgrading to our premium subscription.</p>
+
+  <!-- Display premium features -->
+  <h2>Premium Features</h2>
+  <!-- Display premium content here -->
+
+
+
+  <form id="subscription-form">
+    <input type="text" name="name" placeholder="Name" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <input type="text" name="cardNumber" placeholder="Card Number" required>
+    <input type="text" name="expiryDate" placeholder="Expiry Date" required>
+    <!-- <input type="text" name="cvv" placeholder="CVV" required> -->
+    <button type="submit">Subscribe</button>
+  </form>
+  
+
+
+
+
+
+
+  <?php
+  // Handle subscription form submission
+  if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $email = $_POST['email'];
+  
+    // Perform validation and processing
+    // Store the subscription details in a database or file
+  
+    // Redirect user to a confirmation page
+    header("Location: confirmation.php");
+    exit;
+  }
+  ?>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $('#subscription-form').submit(function(event) {
+      event.preventDefault();
+      var formData = $(this).serialize();
+      
+      // Make an AJAX request to your backend API to process the subscription
+      $.ajax({
+        url: '/subscribe', // Replace with your backend endpoint
+        method: 'POST',
+        data: formData,
+        success: function(response) {
+          // Handle the success response (e.g., display a success message)
+        },
+        error: function(error) {
+          // Handle the error response (e.g., display an error message)
+        }
+      });
+    });
+  });
+</script>
+
+</body>
+</html>

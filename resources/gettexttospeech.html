@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Text-to-Speech</title>
+  <script>
+    // Function to convert text to speech
+    function textToSpeech() {
+      var text = document.getElementById('text').value;
+      var speech = new SpeechSynthesisUtterance();
+      speech.text = text;
+      window.speechSynthesis.speak(speech);
+    }
+
+    // Function to stop speech
+    function stopSpeech() {
+      window.speechSynthesis.cancel();
+    }
+  </script>
+</head>
+<body>
+  <h1>Text-to-Speech</h1>
+  <input type="text" id="text" placeholder="Enter text...">
+  <br>
+  <button onclick="textToSpeech()">Speak</button>
+  <button onclick="stopSpeech()">Stop</button>
+</body>
+</html>
