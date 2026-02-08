@@ -126,7 +126,9 @@
 
 <div class="clear"></div>
 <footer class="footer">
-<p>followMe.com &trade;. Copyright &copy 2024  All rights Reserved.</p>
+<p link="true">followMe.com &trade;. Copyright &copy 2022_ <span id="year">2024</span>  All rights Reserved.</p>
+<!-- <p link="true" >© <span id="year">2022_2023</span> HERMON SEL HAMMAH TETTEY <br> VaxLẽMStore. <br> All rights reserved.
+  </p> -->
 </footer>
 
     </div>
@@ -170,6 +172,21 @@ document.getElementById("ketaVibes").onclick = function(){
 
     }
  </script>
+ <!-- year date changing <script></script> -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      // Get the current year
+      var currentYear = new Date().getFullYear();
+
+      // Find the element in your footer where the year is displayed
+      var yearElement = document.getElementById('year');
+
+      // Update the year in the footer
+      if (yearElement) {
+          yearElement.textContent = currentYear;
+      }
+  });
+</script>
 </body>
 </html>
 
